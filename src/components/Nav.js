@@ -8,12 +8,14 @@ import Logo from './Logo'
 const TopBar = posed.div({
   open: { 
     y: '0%', 
-    staggerChildren: 200, 
+    staggerChildren: 200,
+    opacity: 1, 
     beforeChildren: true, 
     transition: tween
   },
   closed: { 
     y: '-100%',
+    opacity: 0,
     transition: tween 
   },
 })
