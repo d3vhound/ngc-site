@@ -5,8 +5,10 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@marvelapp/react-ab-test": "^2.1.1",
+    "bulma": "^0.7.1",
     "classnames": "^2.2.6",
     "gatsby": "next",
+    "gatsby-plugin-google-fonts": "0.0.4",
     "gatsby-plugin-react-helmet": "next",
     "gatsby-plugin-sass": "next",
     "gatsby-plugin-typography": "^1.7.19",
@@ -24,7 +26,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build && css-gridish",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -111,13 +111,17 @@
 #nav-btn .content .text span {
     display: block;
     color: #FFF;
-    font-family: "Open Sans";
-    font-weight: 600;
+    font-family: "Montserrat";
+    font-weight: 800;
     font-size: 12px;
     text-align: center;
     -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
+}
+
+#nav-btn .content .text span:nth-child(2) {
+  font-size: 13px;
 }
 
 #nav-btn.scroll .content .text span, #nav-btn.active .content .text span {

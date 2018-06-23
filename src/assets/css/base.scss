@@ -10,16 +10,17 @@ body {
 #main-container {
   position: relative;
   width: 100%;
+  margin-top: 5rem;
 }
 
 #header-desktop {
-    font-size: 0px;
-    position: absolute;
-    z-index: 20;
-    height: 50px;
-    width: 100%;
-    top: 50px;
-    left: 0px;
+  font-size: 0px;
+  position: absolute;
+  z-index: 20;
+  height: 50px;
+  width: 100%;
+  top: 50px;
+  left: 0px;
 }
 
 #header-desktop .container-logo {
@@ -39,73 +40,307 @@ body {
 }
 
 #header-desktop .container-logo svg {
-    height: 100%;
-    -webkit-transition: all .25s ease;
-    -o-transition: all .25s ease;
-    transition: all .25s ease;
+  height: 100%;
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
 }
 
-.wrapper {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 15px;
+@media screen and (min-width: 1000px) {
+  .hero .content-text {
+    width: 50%;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    margin-right: 30px;
+  }
 }
 
-.flex-2-col {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+.hero__intro {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 400px;
 }
 
-.hero {
-  position: relative;
-  height: 80vh;
-  width: 100%;
-  overflow: visible;
-  border: 1px solid #efefef;
+@media screen and (min-width: 1000px) {
+  .hero__intro {
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 0;
+    max-width: 520px;
+    margin-right: 0;
+  }
 }
 
-@media screen and (min-width: 768px) {
-.hero .flex-2-col {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+@media screen and (min-width: 660px) {
+  .hero__intro {
+    max-width: 500px;
+    margin-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1000px) {
-.hero .flex-2-col {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+.hero .content-visual {
+    margin-left: 0;
+    margin-right: 0;
+}
+}
+
+@keyframes heroImg {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(10px) rotate3d(0, 0, 0, 0deg);
+    transform: translateY(10px) rotate3d(0, 0, 0, 0deg);
+  }
+  100% {
+    -webkit-transform: translateY(-10px) rotate3d(0, 0, 0, 0deg);
+    transform: translateY(-10px) rotate3d(0, 0, 0, 0deg);
+  }
+}
+
+.floating-images {
+  position: relative;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  will-change: opacity , transform;
+  -webkit-animation-name: heroImg;
+  animation-name: heroImg;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+}
+
+@media screen and (min-width: 1000px) {
+  .floating-images {
+    width: 530px;
   }
 }
 
 @media screen and (min-width: 768px) {
-.flex-2-col {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  .floating-images {
+    width: 550px;
   }
 }
 
-.h-text-container {
-  width: 50%;
+@media screen and (min-width: 375px) {
+  .floating-images {
+    width: 360px;
+  }
 }
 
-.h-right-container {
-  width: 50%;
+.floating-images__container {
+  height: 360px;
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .floating-images__container {
+    height: 570px;
+  }
+}
+
+.floating-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  -webkit-box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  border-radius: 4px;
+  will-change: transform;
+}
+
+.floating-image:nth-child(1) {
+  width: 45px;
+  height: 33.75px;
+  left: auto;
+  right: 40px;
+  top: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-animation: float 6s alternate infinite ease-in-out;
+  animation: float 6s alternate infinite ease-in-out;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.floating-image:nth-child(2) {
+  width: 65px;
+  height: 48.75px;
+  left: auto;
+  right: 120px;
+  top: 5px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-animation: float 6s alternate infinite ease-in-out;
+  animation: float 6s alternate infinite ease-in-out;
+  -webkit-animation-delay: -5s;
+  animation-delay: -5s;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.floating-image:nth-child(3) {
+  width: 78px;
+  height: 58.5px;
+  left: auto;
+  right: 20px;
+  top: 70px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-animation: float 6s alternate infinite ease-in-out;
+  animation: float 6s alternate infinite ease-in-out;
+  -webkit-animation-delay: -3s;
+  animation-delay: -3s;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.floating-image:nth-child(4) {
+  width: 98px;
+  height: 73.5px;
+  left: auto;
+  right: 0;
+  top: 264px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-animation: float 6s alternate infinite ease-in-out;
+  animation: float 6s alternate infinite ease-in-out;
+  -webkit-animation-delay: -4.5s;
+  animation-delay: -4.5s;
+}
+
+.floating-image:nth-child(5) {
+  width: 60px;
+  height: 45px;
+  left: 30px;
+  right: auto;
+  top: 347px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-animation: float 6s alternate infinite ease-in-out;
+  animation: float 6s alternate infinite ease-in-out;
+  -webkit-animation-delay: -1.8s;
+  animation-delay: -1.8s;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.floating-image:nth-child(6) {
+  width: 98px;
+  height: 73.5px;
+  left: auto;
+  right: 60px;
+  top: 25px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-animation: float 6s alternate infinite ease-in-out;
+  animation: float 6s alternate infinite ease-in-out;
+  -webkit-animation-delay: -1.6s;
+  animation-delay: -1.6s;
+}
+
+.floating-image:nth-child(7) {
+  width: 124px;
+  height: 93px;
+  left: 10px;
+  right: auto;
+  top: 144px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-animation: float 6s alternate infinite ease-in-out;
+  animation: float 6s alternate infinite ease-in-out;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+
+.floating-image:nth-child(8) {
+  width: 130px;
+  height: 97.5px;
+  left: 60px;
+  right: auto;
+  top: 272px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-animation: float 6s alternate infinite ease-in-out;
+  animation: float 6s alternate infinite ease-in-out;
+  -webkit-animation-delay: -5.6s;
+  animation-delay: -5.6s;
+}
+
+.floating-image:nth-child(9) {
+  width: 118px;
+  height: 88.5px;
+  left: 90px;
+  right: auto;
+  top: 90px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-animation: float 6s alternate infinite ease-in-out;
+  animation: float 6s alternate infinite ease-in-out;
+  -webkit-animation-delay: -.6s;
+  animation-delay: -.6s;
+}
+
+.floating-image:nth-child(10) {
+  width: 156px;
+  height: 117px;
+  left: auto;
+  right: 40px;
+  top: 170px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-animation: float 6s alternate infinite ease-in-out;
+  animation: float 6s alternate infinite ease-in-out;
+  -webkit-animation-delay: -6.6s;
+  animation-delay: -6.6s;
+}
+
+.floating-image:nth-child(11) {
+  width: 130px;
+  height: 97.5px;
+  left: 0;
+  right: auto;
+  top: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-animation: float 6s alternate infinite ease-in-out;
+  animation: float 6s alternate infinite ease-in-out;
+  -webkit-animation-delay: -2.6s;
+  animation-delay: -2.6s;
+}
+
+.floating-image .image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
 }
