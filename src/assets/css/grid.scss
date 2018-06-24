@@ -28,8 +28,10 @@
 .herov2 {
   background: #000;
   color: #fff;
-  padding-top: 15rem;
-  padding-bottom: 15rem;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .info-section {
