@@ -25,19 +25,33 @@ body {
 }
 
 #header-desktop .container-logo {
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    height: 100%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-transition: all .25s ease;
-    -o-transition: all .25s ease;
-    transition: all .25s ease;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+@media (max-width: 480px) {
+  #header-desktop {
+    top: 10px;
+  }
+
+  #header-desktop .container-logo { 
+    left: 30px;
+    height: 75%;
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+  }
 }
 
 #header-desktop .container-logo svg {
