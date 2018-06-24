@@ -7,9 +7,7 @@ export default (props) => (
 
         <div className="column">
           <h1 className="hero-title">NextGen Code Company</h1>
-          <p className="hero-text p-large">
-            We build apps
-          </p>
+          <h2>Innovative Software Development</h2>
           <button onClick={props.onClick}>Get started</button>
         </div>
 

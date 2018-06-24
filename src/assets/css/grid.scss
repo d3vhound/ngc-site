@@ -12,7 +12,11 @@
 
 /* Constrain layout override */
 .container {
-  max-width: 1100px!important;
+  max-width: 1100px;
+}
+
+.info-section .container {
+  max-width: 970px;
 }
 
 .center-col-content {
@@ -29,7 +33,7 @@
 }
 
 .info-section {
-  background: #efefef;
+  background: transparent;
   padding-top: 8rem;
   padding-bottom: 8rem;
 }

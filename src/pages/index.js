@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import HeroAB from '../components/Hero'
+import MainHero from '../components/MainHero'
 import InfoSection from '../components/InfoSection'
 import ChatIO from 'react-chatio'
 import Layout from '../components/layout'
@@ -23,7 +23,7 @@ class IndexPage extends Component {
     const chat = this.state.appIsMounted
     return (
     <Layout>
-      <HeroAB />
+      <MainHero />
       <InfoSection />
       {chat ? <ChatIO license={9881965} />  : null}
     </Layout>
