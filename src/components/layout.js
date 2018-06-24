@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery } from "gatsby"
 import Nav from './Nav'
@@ -28,16 +28,16 @@ const Layout = ({ children, data }) => (
         />
         <Nav />
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div id="main-container">
+        
           {children}
-        </div>
+        
       </React.Fragment>
     )}
   />
 )
 
-Layout.propTypes = {
-  children: PropTypes.element.isRequired,
-}
+// Layout.propTypes = {
+//   children: PropTypes.element.isRequired,
+// }
 
 export default Layout

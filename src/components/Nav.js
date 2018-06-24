@@ -39,8 +39,8 @@ const NavDesktop = ({ isOpen, navItems }) => (
   <div className="content">
     <div className="container-prLink">
     <ul className="page-home">
-      {navItems.map(({ url, name, index }) => (
-        <NavItem key={index}>
+      {navItems.map(({ url, name }) => (
+        <NavItem key={name}>
           <Link to={url}>{name}</Link>
         </NavItem>
       ))}
@@ -60,8 +60,8 @@ const NavMobile = ({ isOpen, navItems }) => (
     <div className="wrapper">
       <div className="container container-linkPr">
         <ul>
-          {navItems.map(({ url, name, index }) => (
-            <NavItem key={index}>
+          {navItems.map(({ url, name}) => (
+            <NavItem key={name}>
               <Link to={url}>{name}</Link>
             </NavItem>
           ))}

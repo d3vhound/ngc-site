@@ -112,7 +112,7 @@
     display: block;
     color: #FFF;
     font-family: "Montserrat";
-    font-weight: 800;
+    font-weight: 500;
     font-size: 12px;
     text-align: center;
     -webkit-transition: all 0.25s ease;
@@ -186,8 +186,19 @@
   z-index: 21;
   height: 100vh;
   width: 100%;
-  background-color: rgba(0,0,0, .3);
   opacity: 0;
+}
+
+#nav-shadow {
+  position: fixed;
+  display: block;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(0,0,0, .3);
 }
 
 #nav .content:before {

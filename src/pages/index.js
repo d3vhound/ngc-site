@@ -1,32 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
 import HeroAB from '../components/Hero'
+import InfoSection from '../components/InfoSection'
 import ChatIO from 'react-chatio'
 import Layout from '../components/layout'
 
-class IndexPage extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { 
-      appIsMounted: false 
-    };
-  }
-
-  componentDidMount() {
-    this.setState({
-      appIsMounted: true
-    })
-  }
-
-  
-  render () {
-    const chat = this.state.appIsMounted
-    return (
-    <Layout>
-      <HeroAB />
-      { chat ? ( <ChatIO license={9881965} /> ) : null }
-    </Layout>
-    )
-  }
-}
+const IndexPage = () => ( 
+  <Layout>
+    <HeroAB />
+    <InfoSection />
+    <ChatIO license={9881965} />
+  </Layout>
+)
 
 export default IndexPage
