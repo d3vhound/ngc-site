@@ -3,7 +3,7 @@ import Button from '../components/Button'
 
 export default () => (
   <section className="section info-section">
-    <div className="container" style={{marginBottom: '3rem'}}>
+    <div className="container" style={{marginBottom: '3rem', zIndex: '3',}}>
       <div className="columns">
 
         <div className="column">

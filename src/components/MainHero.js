@@ -106,8 +106,18 @@ class MainHero extends Component {
   render() {
     return (
     <>
-    <section className="section herov2">
-      <div className="container has-text-centered" >
+        <section className="section herov2">
+
+          <div class="video-container">
+            <video autoPlay loop muted id="video-bg">
+
+              <source src="https://res.cloudinary.com/devhound/video/upload/v1529956010/Spacious_e1cnqg.mp4" type="video/mp4" />
+
+            </video>
+          </div>
+
+          <div className="container">
+            
         <div className="columns">
   
           <div className="column has-text-left">
@@ -122,7 +132,9 @@ class MainHero extends Component {
           </div>
   
         </div>
+
       </div>
+
     </section>
     <div className="canvas-wrap">
       <canvas id="canvas"></canvas>
