@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import MainHero from '../components/MainHero'
 
 import Layout from '../components/layout'
 
 const SecondPage = () => (
   <Layout>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
+    <MainHero title="Second Page" subtitle="" />
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )

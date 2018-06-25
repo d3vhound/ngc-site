@@ -6,10 +6,9 @@ import { setInterval } from 'timers';
 class MainHero extends Component {
 
   componentDidMount() {
-    (function () {
       let cvs, ctx;
       let waves = [];
-      let waveHeight = 75;
+      let waveHeight = 50;
       let colours = ["#393895", "#ac2e74", "#f78f1d", "#f6f388"];
 
       function init() {
@@ -25,7 +24,7 @@ class MainHero extends Component {
       }
 
       const update = (array) => {
-        var fill = window.getComputedStyle(document.querySelector(".herov2"), null).getPropertyValue("background-color");
+        var fill = "rgb(0, 0, 0)";
         ctx.fillStyle = fill;
         ctx.globalCompositeOperation = "source-over";
         ctx.fillRect(0, 0, cvs.width, cvs.height);
@@ -48,9 +47,9 @@ class MainHero extends Component {
         for (var i = 0; i <= nodes + 2; i++) {
           var temp = [(i - 1) * cvs.width / nodes, 0, Math.random() * 200, .3];
           this.nodes.push(temp);
-          console.log(temp);
+          // console.log(temp);
         }
-        console.log(this.nodes);
+        // console.log(this.nodes);
         waves.push(this);
       }
 
@@ -100,8 +99,8 @@ class MainHero extends Component {
 
       }
 
-      document.addEventListener("DOMContentLoaded", init(), false);
-    })();
+      init()
+    
   }
 
   render() {
@@ -112,8 +111,8 @@ class MainHero extends Component {
         <div className="columns">
   
           <div className="column">
-            <h1 className="hero-title">NextGen Code Company</h1>
-            <h2>Innovative Software Development</h2>
+            <h1 className="hero-title">{this.props.title}</h1>
+            <h2>{this.props.subtitle}</h2>
             <Link to="/">
               <button>Get started</button>
             </Link>
