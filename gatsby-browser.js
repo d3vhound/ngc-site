@@ -8,7 +8,7 @@
 
 import createHistory from "history/createBrowserHistory"
 
-const timeout = 250
+const timeout = 300
 const historyExitingEventType = `history::exiting`
 
 const getUserConfirmation = (pathname, callback) => {
@@ -25,6 +25,7 @@ if (typeof document !== 'undefined') {
   // block must return a string to conform
   history.block((location, action) => location.pathname)
 }
+
 
 export let replaceHistory = () => history
 

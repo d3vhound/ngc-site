@@ -16,7 +16,7 @@ export default () => (
         <div className="column">
           <div className="corner-img">
             <div className="img-frame" style={{ paddingBottom: '71%' }}>
-              <img class="corner-img-child" src="https://res.cloudinary.com/devhound/image/upload/c_fill,f_auto,g_center,h_571,q_auto,w_800/v1529929438/zany-jadraque-571205-unsplash_auoson.jpg" width="800" height="571" alt="info section 1" />
+              <img className="corner-img-child" src="https://res.cloudinary.com/devhound/image/upload/c_fill,f_auto,g_center,h_571,q_auto,w_800/v1529929438/zany-jadraque-571205-unsplash_auoson.jpg" width="800" height="571" alt="info section 1" />
             </div>
           </div>
           <div className="corner-img">
