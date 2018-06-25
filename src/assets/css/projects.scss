@@ -1,13 +1,14 @@
 .project-image {
   max-width: 100%;
   height: auto;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 0%;
+  padding-right: 0%;
 }
 
 @media (min-width: 769px) {
   .project-image {
     padding-right: 0%;
+    padding-left: 10%;
   }
 }
 
