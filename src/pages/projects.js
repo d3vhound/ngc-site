@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import MainHero from '../components/MainHero'
+import SubHero from '../components/SubHero'
 
 import Layout from '../components/layout'
 
-const SecondPage = () => (
+const Projects = () => (
   <Layout>
-    <MainHero title="Second Page" subtitle="" />
+    <SubHero title="Projects" subtitle="" />
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 
-export default SecondPage
+export default Projects

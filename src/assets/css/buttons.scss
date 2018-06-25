@@ -1,0 +1,39 @@
+a {
+  text-decoration: none;
+}
+
+.btn {
+  width: auto;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  display: inline-block;
+  padding: .6rem 1.5rem .45rem;
+  border-radius: .2rem;
+  font-family: "Open Sans", monospace;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5rem;
+  overflow: hidden;
+  border: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.btn span {
+  position: relative;
+  z-index: 3;
+}
+
+.btn.btn--white {
+    color: #1b1b1b;
+    background-color: #fff;
+}
+
+.btn.btn--white:focus, .btn.btn--white:hover {
+    cursor: pointer;
+    color: #1b1b1b;
+    background-color: #efefef;
+    transition: color .3s cubic-bezier(.77,0,.175,1) .1s;
+}

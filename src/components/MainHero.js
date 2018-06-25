@@ -1,7 +1,7 @@
  /* eslint-disable */
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import { setInterval } from 'timers';
+import Button from '../components/Button'
 
 class MainHero extends Component {
 
@@ -110,15 +110,16 @@ class MainHero extends Component {
       <div className="container has-text-centered" >
         <div className="columns">
   
-          <div className="column">
+          <div className="column has-text-left">
             <h1 className="hero-title">{this.props.title}</h1>
-            <h2>{this.props.subtitle}</h2>
+            <p>{this.props.subtitle}</p>
 
-            <Link to="/">
-              <button>Get started</button>
-            </Link>
+            <Button to="/contact" color="white" text="View Portfolio"/>
           </div>
-  
+
+          <div className="column" style={{maxHeight: '300px'}}>
+            
+          </div>
   
         </div>
       </div>
