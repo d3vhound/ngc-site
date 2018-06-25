@@ -30,7 +30,7 @@ export default () => (
       </div>
     </div>
     <div className="container has-text-centered">
-      <Button to="our-process" color="dark" text="Our Process" />
+      <Button to="/our-process" color="dark" text="Our Process" />
     </div>
   </section>
 )
