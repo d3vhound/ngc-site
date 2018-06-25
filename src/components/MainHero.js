@@ -8,7 +8,7 @@ class MainHero extends Component {
   componentDidMount() {
       let cvs, ctx;
       let waves = [];
-      let waveHeight = 70;
+      let waveHeight = 55;
       let colours = ["#393895", "#ac2e74", "#f78f1d", "#f6f388"];
 
       function init() {
@@ -20,7 +20,7 @@ class MainHero extends Component {
           var temp = new wave(colours[i], 1, 6)
         }
 
-        setInterval(update, 16)
+        setInterval(update, 10)
       }
 
       const update = (array) => {
