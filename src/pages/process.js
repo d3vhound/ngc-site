@@ -2,10 +2,10 @@ import React from 'react'
 import SubHero from '../components/SubHero'
 import Layout from '../components/layout'
 
-const OurProcess = () => (
+const Process = () => (
   <Layout>
     <SubHero title="Our Process" subtitle="" />
   </Layout>
 )
 
-export default OurProcess
+export default Process

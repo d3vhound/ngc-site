@@ -21,7 +21,7 @@ export default () => (
           </div>
           <div className="corner-img">
             <div className="img-frame" style={{paddingBottom: '71%'}}>
-              <img class="corner-img-child" src="https://res.cloudinary.com/devhound/image/upload/c_fill,f_auto,h_571,q_auto,w_800/v1529929623/About_Us_Office-25_rwbiqn.jpg" width="800" height="571" alt="info section 2" />
+              <img className="corner-img-child" src="https://res.cloudinary.com/devhound/image/upload/c_fill,f_auto,h_571,q_auto,w_800/v1529929623/About_Us_Office-25_rwbiqn.jpg" width="800" height="571" alt="info section 2" />
             </div>
           </div>
           
@@ -30,7 +30,7 @@ export default () => (
       </div>
     </div>
     <div className="container has-text-centered">
-      <Button to="/our-process" color="dark" text="Our Process" />
+      <Button to="/process" color="dark" text="Our Process" />
     </div>
   </section>
 )
