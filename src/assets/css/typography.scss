@@ -74,21 +74,6 @@ h1 {
   line-height: 1.75rem;
 }
 
-.info-section h1:before {
-    content: '';
-    height: 3px;
-    width: 60px;
-    border-radius: 2px;
-    background: rgb(57,56,149);
-    background: -moz-linear-gradient(90deg, rgba(57,56,149,1) 0%, rgba(172,46,116,1) 33%, rgba(247,143,29,1) 66%, rgba(246,243,136,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(57,56,149,1) 0%, rgba(172,46,116,1) 33%, rgba(247,143,29,1) 66%, rgba(246,243,136,1) 100%);
-    background: linear-gradient(90deg, rgba(57,56,149,1) 0%, rgba(172,46,116,1) 33%, rgba(247,143,29,1) 66%, rgba(246,243,136,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#393895",endColorstr="#f6f388",GradientType=1);
-    position: absolute;
-    top: 30px;
-    right: calc(100% + 35px);
-}
-
 p {
   font-family: 'Maison-Mono', monospace;
   margin-top: 1.25rem;

@@ -92,6 +92,23 @@ class Nav extends Component {
     }
   }
 
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll)
+  }
+
+  handleScroll = () => {
+    if (window.scrollY > 50) {
+      this.setState({
+        isScrolling: true
+      })
+    }
+    else {
+      this.setState({
+        isScrolling: false
+      })
+    }
+  }
+
   render() {
     
     // const navStyles = classNames({

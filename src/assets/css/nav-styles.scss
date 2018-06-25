@@ -111,8 +111,8 @@
 #nav-btn .content .text span {
     display: block;
     color: #FFF;
-    font-family: "Montserrat";
-    font-weight: 500;
+    font-family: 'Montserrat';
+    font-weight: 600;
     font-size: 12px;
     text-align: center;
     -webkit-transition: all 0.25s ease;
@@ -125,23 +125,27 @@
 }
 
 #nav-btn.scroll .content .text span, #nav-btn.active .content .text span {
-    color: #1b1b1b !important;
+  color: #1b1b1b !important;
+}
+
+#nav-btn.scroll {
+  background-color: #FFFFFF;
 }
 
 #nav-btn .content .action {
-    height: 27px;
-    width: 27px;
-    margin-top: 14px;
-    position: relative;
+  height: 27px;
+  width: 27px;
+  margin-top: 14px;
+  position: relative;
 }
 
 #nav-btn .content .action .bar {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    // -webkit-transform: translate(-50%, -50%);
+    // -ms-transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
     height: 100%;
     width: 1px;
     background-color: #FFF;
@@ -150,13 +154,13 @@
     transition: all 0.5s cubic-bezier(0.000, 0.785, 0.000, 1.000);
 }
 
-#nav-btn:hover .content .action .bar:nth-child(1) {
+#nav-btn .content .action .bar:nth-child(1) {
     -webkit-transform: translate(-50%, -30%) rotate(90deg) scaleY(0.7);
     -ms-transform: translate(-50%, -30%) rotate(90deg) scaleY(0.7);
     transform: translate(-50%, -30%) rotate(90deg) scaleY(0.7);
 }
 
-#nav-btn:hover .content .action .bar:nth-child(2) {
+#nav-btn .content .action .bar:nth-child(2) {
     -webkit-transform: translate(-50%, -70%) rotate(90deg) scaleY(0.7);
     -ms-transform: translate(-50%, -70%) rotate(90deg) scaleY(0.7);
     transform: translate(-50%, -70%) rotate(90deg) scaleY(0.7);

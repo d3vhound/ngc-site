@@ -23,7 +23,7 @@ const ProjectSections = ({ node }) => {
 
 const IndexPage = ({data}) => (
   <Layout>
-    <MainHero title="NextGen Code Company" subtitle="We specialize in developing cost-effective applications for businesses around the world"/>
+    <MainHero title="NextGen Code Company" subtitle="We are a software development agency that specializes in developing cost-effective apps for small businesses around the world."/>
     <InfoSection />
     
       {data.allContentfulProject.edges.map((edge) => <ProjectSections key={edge.node.title} node={edge.node} />)}
