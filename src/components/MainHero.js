@@ -87,11 +87,11 @@ class MainHero extends Component {
           canvas.width = width;
           canvas.height = height;
         } else {
-          if (window.innerHeight > 1920) {
+          if (window.innerWidth > 1920) {
             canvas.width = window.innerWidth;
           }
           else {
-            canvas.width = window.innerWidth;
+            canvas.width = 1920;
           }
 
           canvas.height = waveHeight;
