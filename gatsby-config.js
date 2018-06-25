@@ -5,6 +5,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    'gatsby-transformer-remark',
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -18,6 +19,13 @@ module.exports = {
       options: {
         appId: '5descdcc8vrz',
       },
+    },
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: 'sb19c99vsgt1',
+        accessToken: 'f0e3778507d1bd5b6c59827f584506d5fb62d529aceb9d3fbe09c922d608f64d'
+      }
     },  
   ],
 }

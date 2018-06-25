@@ -9,7 +9,7 @@ class SubHero extends Component {
 
             <div className="column">
               <h1 className="hero-title">{this.props.title}</h1>
-              <p>{this.props.subtitle}</p>
+              <h2 className="subhero-subtitle">{this.props.subtitle}</h2>
 
             </div>
 

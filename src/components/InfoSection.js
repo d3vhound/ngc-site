@@ -7,7 +7,7 @@ export default () => (
 
         <div className="column" style={{paddingLeft: '95px'}}>
           <h1 className="hero-title">What we do</h1>
-          <p className="p-large">
+          <p>
             Spicy jalapeno bacon ipsum dolor amet pork belly cow sausage pancetta, landjaeger prosciutto meatball picanha hamburger short ribs tenderloin biltong porchetta beef. Meatloaf tenderloin ball tip, brisket pork ground round pork belly sausage prosciutto bresaola drumstick chicken.
           </p>
         </div>

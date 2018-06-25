@@ -91,7 +91,7 @@ class MainHero extends Component {
             canvas.width = window.innerWidth;
           }
           else {
-            canvas.width = 1920;
+            canvas.width = window.innerWidth;
           }
 
           canvas.height = waveHeight;
@@ -114,7 +114,7 @@ class MainHero extends Component {
             <h1 className="hero-title">{this.props.title}</h1>
             <p>{this.props.subtitle}</p>
 
-            <Button to="/contact" color="white" text="View Portfolio"/>
+            <Button to="/projects" color="white" text="View Portfolio"/>
           </div>
 
           <div className="column" style={{maxHeight: '300px'}}>

@@ -31,6 +31,11 @@ a {
     background-color: #fff;
 }
 
+.btn.btn--dark {
+    background-color: #1b1b1b;
+    color: #fff;
+}
+
 .btn.btn--white:focus, .btn.btn--white:hover {
     cursor: pointer;
     color: #1b1b1b;
