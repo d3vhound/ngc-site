@@ -8,7 +8,7 @@ class MainHero extends Component {
   componentDidMount() {
       let cvs, ctx;
       let waves = [];
-      let waveHeight = 50;
+      let waveHeight = 70;
       let colours = ["#393895", "#ac2e74", "#f78f1d", "#f6f388"];
 
       function init() {
@@ -113,6 +113,7 @@ class MainHero extends Component {
           <div className="column">
             <h1 className="hero-title">{this.props.title}</h1>
             <h2>{this.props.subtitle}</h2>
+
             <Link to="/">
               <button>Get started</button>
             </Link>
