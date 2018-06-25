@@ -110,7 +110,7 @@ class MainHero extends Component {
         <section className="section herov2">
 
           <div className="video-container">
-            <LazyLoad onContentVisible={() => console.log('look ma I have been lazyloaded!')}>
+            <LazyLoad height={720} onContentVisible={() => console.log('look ma I have been lazyloaded!')}>
             <video className="lazy" autoPlay playsInline loop muted id="video-bg" poster="https://res.cloudinary.com/devhound/image/upload/v1529955642/Spacious_qaqfxc.jpg">
 
               <source src="https://res.cloudinary.com/devhound/video/upload/v1529956010/Spacious_e1cnqg.mp4" type="video/mp4" />

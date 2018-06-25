@@ -4,6 +4,7 @@ import InfoSection from '../components/InfoSection'
 import Layout from '../components/layout'
 import Button from '../components/Button'
 import { graphql } from 'gatsby'
+import LazyLoad from 'react-lazy-load';
 import ProjectList from '../components/ProjectList'
 
 const ProjectSections = ({ node }) => {
@@ -15,7 +16,9 @@ const ProjectSections = ({ node }) => {
       <Button to={'/projects/' + node.slug} color="dark" text="More info"/>
     </div>
     <div className="column image-column">
-      <img className="project-image" alt={node.title + " project image"} src={node.mockup.resolutions.src} />
+      <LazyLoad height={580} offsetVertical={300}>
+        <img className="project-image" alt={node.title + " project image"} src={node.mockup.resolutions.src} />
+      </LazyLoad>
     </div>
     </ProjectList>
   )

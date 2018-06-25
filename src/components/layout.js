@@ -5,7 +5,6 @@ import Helmet from 'react-helmet'
 import { StaticQuery } from "gatsby"
 import Nav from './Nav'
 import Header from './header'
-import Transition from "./transition"
 import '../assets/css/index.scss'
 
 const Layout = ({ children, data }) => (
@@ -31,7 +30,7 @@ const Layout = ({ children, data }) => (
         <Nav />
         <Header siteTitle={data.site.siteMetadata.title} />
         
-        <Transition>{children}</Transition>
+        {children}
         
       </React.Fragment>
     )}
