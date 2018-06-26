@@ -178,7 +178,7 @@ class Nav extends Component {
         
         <NavDesktop onClick={handleCloseNav} isOpen={this.state.isOpenDesktop} navItems={navLinks}/>
 
-        <NavMobile isOpen={this.state.isOpenMobile} navItems={navLinks}/>
+        <NavMobile onClick={handleCloseNav} isOpen={this.state.isOpenMobile} navItems={navLinks}/>
 
       </React.Fragment>
     )
