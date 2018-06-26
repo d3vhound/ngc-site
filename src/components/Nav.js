@@ -20,6 +20,21 @@ const TopBar = posed.div({
   },
 })
 
+const MobileTopBar = posed.div({
+  open: {
+    x: '0%',
+    staggerChildren: 150,
+    opacity: 1,
+    beforeChildren: true,
+    transition: tween
+  },
+  closed: {
+    x: '-100%',
+    opacity: 0,
+    transition: () => false
+  },
+})
+
 const NavItem = posed.li({
   open: { opacity: 1, y: '0%' },
   closed: { opacity: 0, y: '50%' }
@@ -50,8 +65,8 @@ const NavDesktop = ({ isOpen, navItems, onClick }) => (
   </TopBar>
 )
 
-const NavMobile = ({ isOpen, navItems }) => (
-  <TopBar id="nav-mobile" pose={isOpen ? 'open' : 'closed'}>
+const NavMobile = ({ isOpen, navItems, onClick }) => (
+  <MobileTopBar id="nav-mobile" pose={isOpen ? 'open' : 'closed'}>
     <div className="head">
       <MobileLogo href="/" className="container-logo">
         <Logo />
@@ -62,13 +77,13 @@ const NavMobile = ({ isOpen, navItems }) => (
         <ul>
           {navItems.map(({ url, name}) => (
             <NavItem key={name}>
-              <Link to={url}>{name}</Link>
+              <Link onClick={onClick} to={url}>{name}</Link>
             </NavItem>
           ))}
         </ul>
       </div>
     </div>
-  </TopBar>
+  </MobileTopBar>
 )
 
 const navLinks = [
@@ -143,6 +158,13 @@ class Nav extends Component {
       }))
     }
 
+    const handleCloseNavM = () => {
+      this.setState(prevState => ({
+        isOpenMobile: !prevState.isOpenMobile,
+        navX: !prevState.navX
+      }))
+    }
+
     return (
       <React.Fragment>
 
@@ -177,7 +199,7 @@ class Nav extends Component {
         
         <NavDesktop onClick={handleCloseNav} isOpen={this.state.isOpenDesktop} navItems={navLinks}/>
 
-        <NavMobile isOpen={this.state.isOpenMobile} navItems={navLinks}/>
+        <NavMobile onClick={handleCloseNavM} isOpen={this.state.isOpenMobile} navItems={navLinks}/>
 
       </React.Fragment>
     )
