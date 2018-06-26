@@ -8,7 +8,7 @@ import ProjectList from '../components/ProjectList'
 
 const ProjectSections = ({ node }) => {
   return (
-    <ProjectList classes="section project-section">
+    <ProjectList>
     <div className="column center-content is-one-third">
       <h1 className="project-title">{node.title}</h1>
       <h2 className="project-type project-type-underline">{node.type || "Project Type"}</h2>

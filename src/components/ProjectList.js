@@ -4,13 +4,18 @@ import WaypointWrapper from './WaypointWrapper'
 class ProjectList extends Component {
   render() {
     return (
-      <section className={this.props.classes}>
-        <WaypointWrapper>
+      <WaypointWrapper>
+        <div className="illu illu-right">
+          <div className="bg bg-left">
+            <img alt="project bg background" src={this.props.backgroundImg || "https://source.unsplash.com/user/erondu/1600x900"} />
+          </div>
+        </div> 
+        <div className="container">
           <div className="columns">
             {this.props.children}
           </div>
-        </WaypointWrapper>
-      </section>
+        </div>
+      </WaypointWrapper>
     )
   }
 }

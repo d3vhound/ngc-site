@@ -1,5 +1,55 @@
-.project-section .container.reach .project-image {
+/* project main image animation */
+.project_section.reach .project-image {
   opacity: 1;
-  transform: translateY(0px);
-  transition: all 3s ease;
+  transition: opacity 1000ms cubic-bezier(0.694, 0, 0.335, 1);
+}
+
+/* project absolute image animation */
+.project_section.reach .illu .bg {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.project_section .illu {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  height: 100%;
+  width: 45%;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.illu-right {
+  right: 0px;
+}
+
+.bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-transition: transform 750ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  -o-transition: transform 750ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  -webkit-transition: -webkit-transform 750ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition: -webkit-transform 750ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition: transform 750ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition: transform 750ms cubic-bezier(0.215, 0.610, 0.355, 1.000), -webkit-transform 750ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
+.bg-left {
+  left: 0px;
+}
+
+.bg-right {
+  right: 0px;
 }

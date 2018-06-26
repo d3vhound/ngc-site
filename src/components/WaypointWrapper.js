@@ -22,7 +22,8 @@ class WaypointWrapper extends React.Component {
 
     const ReachStyles = classNames({
       reach: this.state.inView,
-      container: true
+      section: true,
+      project_section: true
     }) 
 
     return (
