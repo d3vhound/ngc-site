@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import { StaticQuery } from "gatsby"
 import Nav from './Nav'
+import Transition from './transition'
 import Header from './header'
 import '../assets/css/index.scss'
 
@@ -30,7 +31,11 @@ const Layout = ({ children, data }) => (
         <Nav />
         <Header siteTitle={data.site.siteMetadata.title} />
         
+        
+        
+        <Transition>
         {children}
+        </Transition>
         
       </React.Fragment>
     )}
