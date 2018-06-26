@@ -4,6 +4,7 @@ import SubHero from '../components/SubHero'
 import Layout from '../components/layout'
 import ProjectList from '../components/ProjectList'
 import Button from '../components/Button'
+import { Parallax } from 'react-scroll-parallax';
 
 const ProjectSections = ({ node }) => {
   return (
@@ -13,9 +14,14 @@ const ProjectSections = ({ node }) => {
         <h2 className="project-type project-type-underline">{node.type || "Project Type"}</h2>
         <Button to={'/projects/' + node.slug} color="dark" text="More info" />
       </div>
-      <div className="column image-column">
+      <Parallax
+        className="column image-column"
+        offsetYMax={-20}
+        offsetYMin={10}
+        slowerScrollRate
+      >
         <img className="project-image" alt={node.title + " project image"} src={node.mockup.resolutions.src} />
-      </div>
+      </Parallax>
     </ProjectList>
   )
 }

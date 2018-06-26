@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import { StaticQuery } from "gatsby"
 import Nav from './Nav'
-import Transition from './transition'
+import { ParallaxProvider } from 'react-scroll-parallax';
 import Header from './header'
 import '../assets/css/index.scss'
 
@@ -34,10 +34,9 @@ const Layout = ({ children, data }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         
         
-        
-        <Transition>
+        <ParallaxProvider>
           {children}
-        </Transition>
+        </ParallaxProvider>
 
       </React.Fragment>
     )}

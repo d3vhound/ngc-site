@@ -28,11 +28,19 @@
 }
 
 .project_section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  margin: 2rem 0;
-  background: #efefef;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  margin: 4rem 0;
+  // background: #efefef;
   position: relative;
+}
+
+@media(min-width: 1200px) {
+  .project_section { 
+    margin: 10rem 0;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
 }
 
 @media (min-width: 769px) {
@@ -42,7 +50,7 @@
     top: 1rem;
     display: block;
     height: 2px;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1rem;
     background: #1b1b1b;
   }
 }
@@ -53,6 +61,10 @@ h2.project-type {
   font-weight: 400;
   opacity: .75;
   letter-spacing: 1px;
+}
+
+p.project-short-desc {
+  margin-bottom: 2rem;
 }
 
 .center-content {
