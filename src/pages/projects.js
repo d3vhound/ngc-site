@@ -38,6 +38,7 @@ export const ProjectQuery = graphql`
         node {
           title
           slug
+          type
           mockup {
             resolutions(width: 1080) {
               width
