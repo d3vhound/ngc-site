@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import { StaticQuery } from "gatsby"
 import Nav from './Nav'
+import FbMessenger from './FbMessenger'
 import Transition from './transition'
 import Header from './header'
 import '../assets/css/index.scss'
@@ -36,9 +37,9 @@ const Layout = ({ children, data }) => (
         
         
         <Transition>
-        {children}
+          {children}
         </Transition>
-        
+        <FbMessenger />
       </React.Fragment>
     )}
   />
