@@ -51,7 +51,7 @@ export const IndexQuery = graphql`
           slug
           type
           backgroundImage {
-            sizes(maxWidth: 2560) {
+            sizes(maxWidth: 1800) {
               ...GatsbyContentfulSizes_withWebp_noBase64
             }
           }
