@@ -16,7 +16,7 @@ const TopBar = posed.div({
   closed: { 
     y: '-100%',
     opacity: 0,
-    transition: tween 
+    transition: () => false 
   },
 })
 
