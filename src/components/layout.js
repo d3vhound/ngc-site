@@ -29,16 +29,6 @@ const Layout = ({ children, data }) => (
         <Transition> 
           <div className="base-overlay">
           </div>
-          <div className="base-overlay ng-two">
-          </div>
-          <div className="base-overlay ng-three">
-          </div>
-          <div className="base-overlay ng-four">
-          </div>
-          <div className="base-overlay ng-five">
-          </div>
-          <div className="base-overlay ng-six">
-          </div>
         </Transition>
         <Helmet
           title={data.site.siteMetadata.title}

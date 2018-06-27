@@ -192,7 +192,7 @@ canvas {
   height: 100vh;
   position: absolute;
   top: 0;
-  z-index: 5000;
+  z-index: 25;
   left: 0;
   // transform: translateY(100vh);
   pointer-events: none;
@@ -205,28 +205,31 @@ canvas {
 }
 
 .ng-two {
-  transition-delay: 100ms;
-  background: #FFFF83;
-  z-index: 4999;
+  background: #000;
+  z-index: 24;
 }
 
 .ng-three {
-  transition-delay: 200ms;
+  transition-delay: 200ms !important;
   background: #FFAE1B;
-  z-index: 4998;
+  z-index: 23;
 }
 .ng-four {
-  transition-delay: 300ms;
+  transition-delay: 300ms !important;
   background: #FF6A40;
-  z-index: 4997;
+  z-index: 22;
 }
 .ng-five {
-  transition-delay: 400ms;
+  transition-delay: 400ms !important;
   background: #CC4379;
-  z-index: 4996;
+  z-index: 24;
 }
 .ng-six {
-  transition-delay: 5000ms;
+  transition-delay: 500ms !important;
   background: #7D159A;
-  z-index: 4995;
+  z-index: 25;
+}
+
+.ng-container-two {
+  transition-delay: 1000ms!important;
 }

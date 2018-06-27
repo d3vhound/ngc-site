@@ -40,6 +40,7 @@ class TransitionTwo extends React.Component {
     }
 
     return (
+      <>
       <ReactTransition {...transitionProps}>
         {status => (
           <div
@@ -51,6 +52,7 @@ class TransitionTwo extends React.Component {
           </div>
         )}
       </ReactTransition>
+      </>
     )
   }
 }
