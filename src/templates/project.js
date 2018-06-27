@@ -10,7 +10,7 @@ class Project extends Component {
 
     return (
       <Layout>
-        <SubHero title="Project" subtitle={title} classes/>
+        <SubHero title={title} subtitle="" classes/>
         <section className="section">
           <div className="container">
             <div className="project-page-img-container">

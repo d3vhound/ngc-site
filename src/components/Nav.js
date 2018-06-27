@@ -171,10 +171,7 @@ class Nav extends Component {
         <div id="nav-btn" onClick={handleNavClick} className={navButtonStyles}>
           <div className="content">
             <div className="text">
-              <span>M</span>
-              <span>E</span>
-              <span>N</span>
-              <span>U</span>
+              MENU
             </div>
 
             <div className="action">

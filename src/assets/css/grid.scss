@@ -72,3 +72,16 @@
     padding-top: 4rem;
   }
 }
+
+
+/* Stick footer to bottom */
+#___gatsby {
+  min-height: 100%;
+  position: relative;
+}
+
+.footer {
+  position: absolute;
+  bottom: -90vh;
+  width: 100%;
+}

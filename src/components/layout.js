@@ -6,6 +6,7 @@ import { StaticQuery } from "gatsby"
 import Nav from './Nav'
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Header from './header'
+import Footer from './Footer'
 import '../assets/css/index.scss'
 
 const Layout = ({ children, data }) => (
@@ -36,6 +37,7 @@ const Layout = ({ children, data }) => (
         
         <ParallaxProvider>
           {children}
+          <Footer />
         </ParallaxProvider>
 
       </React.Fragment>

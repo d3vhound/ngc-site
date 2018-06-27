@@ -108,11 +108,12 @@
     position: relative;
 }
 
-#nav-btn .content .text span {
+#nav-btn .content .text {
     display: block;
     color: #FFF;
-    font-family: 'Montserrat';
-    font-weight: 600;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    letter-spacing: 1px;
     font-size: 12px;
     text-align: center;
     -webkit-transition: all 0.25s ease;
@@ -120,11 +121,7 @@
     transition: all 0.25s ease;
 }
 
-#nav-btn .content .text span:nth-child(2) {
-  font-size: 13px;
-}
-
-#nav-btn.scroll .content .text span, #nav-btn.active .content .text span {
+#nav-btn.scroll .content .text, #nav-btn.active .content .text {
   color: #1b1b1b !important;
 }
 
@@ -134,7 +131,7 @@
 
 #nav-btn .content .action {
   height: 27px;
-  width: 27px;
+  width: 100%;
   margin-top: 14px;
   position: relative;
 }

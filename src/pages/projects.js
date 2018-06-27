@@ -5,10 +5,11 @@ import Layout from '../components/layout'
 import ProjectList from '../components/ProjectList'
 import Button from '../components/Button'
 import { Parallax } from 'react-scroll-parallax';
+import Img from 'gatsby-image';
 
 const ProjectSections = ({ node }) => {
   return (
-    <ProjectList classes="section project-section">
+    <ProjectList backgroundImg={node.backgroundImage.sizes} classes="section project-section">
       <div className="column center-content is-one-third">
         <h1 className="project-title">{node.title}</h1>
         <h2 className="project-type project-type-underline">{node.type || "Project Type"}</h2>
@@ -20,7 +21,7 @@ const ProjectSections = ({ node }) => {
         offsetYMin={10}
         slowerScrollRate
       >
-        <img className="project-image" alt={node.title + " project image"} src={node.mockup.resolutions.src} />
+        <Img backgroundColor={'#f1f1f1'} className="project-image" sizes={node.mockup.sizes} alt={node.title + " project image"} />
       </Parallax>
     </ProjectList>
   )
@@ -45,11 +46,14 @@ export const ProjectQuery = graphql`
           title
           slug
           type
+          backgroundImage {
+            sizes(maxWidth: 1800) {
+              ...GatsbyContentfulSizes_withWebp_noBase64
+            }
+          }
           mockup {
-            resolutions(width: 1080) {
-              width
-              height
-              src
+            sizes(maxWidth: 1800) {
+              ...GatsbyContentfulSizes_withWebp_noBase64
             }
           }
         }
