@@ -71,7 +71,7 @@
   padding-bottom: 8rem;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 970px) {
   .reverse-column-order {
     display: flex;
     flex-direction: column-reverse;
@@ -79,7 +79,8 @@
 
   .reverse-column-order .center-content {
     flex: 1;
-    padding-top: 4rem;
+    padding-top: 2rem;
+    width: 100%;
   }
 }
 

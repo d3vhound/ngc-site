@@ -13,10 +13,28 @@ class Project extends Component {
         <SubHero title={title} subtitle="" classes/>
         <section className="section">
           <div className="container">
-            <div className="project-page-img-container">
-              <img width="100%" alt="main project mockup" src={mockup.resolutions.src}/>
+            <div className="columns">
+              <div className="column">Logo</div>
+              <div className="column"></div>
             </div>
-            <div dangerouslySetInnerHTML={{ __html: content.childMarkdownRemark.html }} />
+            <div className="columns">
+              <div className="column">
+                <div dangerouslySetInnerHTML={{ __html: content.childMarkdownRemark.html }} />
+              </div>
+              <div className="column"></div>
+            </div>
+          </div>
+        </section>
+        <section className="section">
+          <div className="container">
+            <div className="columns">
+              <div className="column">
+                <img width="100%" alt="main project mockup" src={mockup.resolutions.src} />
+              </div>
+              <div className="column">
+                <img width="100%" alt="main project mockup" src={mockup.resolutions.src} />
+              </div>
+            </div>
           </div>
         </section>
       </Layout>

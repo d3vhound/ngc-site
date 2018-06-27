@@ -111,6 +111,10 @@ class Nav extends Component {
     window.addEventListener('scroll', this.handleScroll)
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll)
+  }
+
   handleScroll = () => {
     if (window.scrollY > 50) {
       this.setState({
