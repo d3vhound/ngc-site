@@ -1,17 +1,19 @@
 const getTransitionStyles = timeout => {
   return {
+    exiting: {
+      transform: 'translateY(0vh)',
+      transition: `transform ${timeout}ms ease`,
+    },
+    exited : {
+      transform: 'translateY(0vh)',
+      transition: `all ${timeout}ms ease`,
+    },
     entering: {
-      opacity: 0,
-      transform: `translateY(0vh)`
+      transition: `all ${timeout}ms ease`,
+      transform: 'translateY(-100vh)',
     },
     entered: {
-      transition: `all ${timeout}ms ease`,
-      opacity: 1,
-    },
-    exiting: {
-      transition: `all ${timeout}ms ease`,
-      opacity: 0,
-      transform: 'translateY(-100vh)',
+      transform: 'translateY(100vh)',
     },
   }
 }

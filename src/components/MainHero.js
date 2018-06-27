@@ -132,7 +132,7 @@ class MainHero extends Component {
     });
       
   }
-
+  
   render() {
     return (
     <>

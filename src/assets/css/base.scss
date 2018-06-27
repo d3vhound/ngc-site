@@ -186,3 +186,47 @@ canvas {
   vertical-align: top;
   width: 100%;
 }
+
+.base-overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 5000;
+  left: 0;
+  // transform: translateY(100vh);
+  pointer-events: none;
+  background: #fff;
+}
+
+.overlay-container {
+  position: fixed;
+  z-index: 5000;
+}
+
+.ng-two {
+  transition-delay: 100ms;
+  background: #FFFF83;
+  z-index: 4999;
+}
+
+.ng-three {
+  transition-delay: 200ms;
+  background: #FFAE1B;
+  z-index: 4998;
+}
+.ng-four {
+  transition-delay: 300ms;
+  background: #FF6A40;
+  z-index: 4997;
+}
+.ng-five {
+  transition-delay: 400ms;
+  background: #CC4379;
+  z-index: 4996;
+}
+.ng-six {
+  transition-delay: 5000ms;
+  background: #7D159A;
+  z-index: 4995;
+}

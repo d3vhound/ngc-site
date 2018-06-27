@@ -35,6 +35,15 @@
   padding: 6px;
 }
 
+.contact-social img {
+  background: #000;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 6px;
+  margin: 0 6px;
+}
+
 .footer-social a, .contact .phone a, .contact .email a  {
   transition: opacity .3s ease;
 }

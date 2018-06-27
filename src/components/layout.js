@@ -8,6 +8,9 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import Header from './header'
 import Footer from './Footer'
 import '../assets/css/index.scss'
+import Transition from '../components/transition'
+import TransitionTwo from '../components/transition2'
+
 
 const Layout = ({ children, data }) => (
   <StaticQuery
@@ -22,6 +25,21 @@ const Layout = ({ children, data }) => (
     `}
     render={data => (
       <React.Fragment>
+        <ParallaxProvider>
+        <Transition> 
+          <div className="base-overlay">
+          </div>
+          <div className="base-overlay ng-two">
+          </div>
+          <div className="base-overlay ng-three">
+          </div>
+          <div className="base-overlay ng-four">
+          </div>
+          <div className="base-overlay ng-five">
+          </div>
+          <div className="base-overlay ng-six">
+          </div>
+        </Transition>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -34,13 +52,16 @@ const Layout = ({ children, data }) => (
         <Nav />
         <Header siteTitle={data.site.siteMetadata.title} />
         
-        <ParallaxProvider>
-        <div id="body">
-          {children}
-        </div>
 
-        <Footer />
-        </ParallaxProvider>
+          <TransitionTwo>
+          <div id="body">
+            {children}
+          </div>
+          </TransitionTwo>
+
+          <Footer />
+          </ParallaxProvider>
+        
       </React.Fragment>
     )}
   />

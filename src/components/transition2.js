@@ -1,9 +1,9 @@
 import React from "react"
 import { Transition as ReactTransition } from "react-transition-group"
-import getTransitionStyle from "../utils/getTransitionStyle"
+import getTransitionStyleTwo from "../utils/getTransitionStyleTwo"
 import { historyExitingEventType, timeout } from "../../gatsby-browser"
 
-class Transition extends React.Component {
+class TransitionTwo extends React.Component {
   constructor(props) {
     super(props)
     this.state = { exiting: false }
@@ -32,7 +32,7 @@ class Transition extends React.Component {
   render() {
     const transitionProps = {
       timeout: {
-        enter: timeout,
+        enter: 0,
         exit: timeout,
       },
       appear: true,
@@ -42,9 +42,9 @@ class Transition extends React.Component {
     return (
       <ReactTransition {...transitionProps}>
         {status => (
-          <div className="overlay-container"
+          <div
             style={{
-              ...getTransitionStyle({ status, timeout }),
+              ...getTransitionStyleTwo({ status, timeout }),
             }}
           >
             {this.props.children}
@@ -55,4 +55,4 @@ class Transition extends React.Component {
   }
 }
 
-export default Transition
+export default TransitionTwo
