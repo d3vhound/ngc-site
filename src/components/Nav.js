@@ -88,9 +88,9 @@ const NavMobile = ({ isOpen, navItems, onClick }) => (
 
 const navLinks = [
   { url: '/', name: 'Home' },
-  { url: '/about', name: 'About' },
-  { url: '/projects', name: 'Projects' },
-  { url: '/contact', name: 'Contact' },
+  { url: '/about/', name: 'About' },
+  { url: '/projects/', name: 'Projects' },
+  { url: '/contact/', name: 'Contact' },
 ];
 
 class Nav extends Component {
