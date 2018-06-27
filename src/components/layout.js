@@ -34,12 +34,13 @@ const Layout = ({ children, data }) => (
         <Nav />
         <Header siteTitle={data.site.siteMetadata.title} />
         
-        
+        <div id="body">
         <ParallaxProvider>
           {children}
-          <Footer />
         </ParallaxProvider>
+        </div>
 
+        <Footer />
       </React.Fragment>
     )}
   />

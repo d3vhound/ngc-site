@@ -63,7 +63,7 @@ export default () => (
           <div className="separator"></div>
           <ul className="footer-links">
             {navLinks.map(({url, name}) => (
-              <li>
+              <li key={name}>
                 <Link to={url}>{name}</Link>
               </li>
             ))}

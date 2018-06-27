@@ -44,8 +44,18 @@
 .subhero {
   background: #000;
   color: #fff;
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
+  padding-top: 6.5rem;
+  padding-bottom: 6.5rem;
+}
+
+@media (max-width: 767px) {
+  .subhero {
+    padding-bottom: 3.5rem;
+  }
+}
+
+.subhero .hero-title {
+  padding-left: 10px;
 }
 
 @media (max-width: 480px) {
@@ -75,13 +85,33 @@
 
 
 /* Stick footer to bottom */
+#body {
+  min-height: 90vh;
+  padding-bottom: 10rem;
+}
+
 #___gatsby {
   min-height: 100%;
   position: relative;
+  height: 100%;
+  padding-bottom: 1200px;
+}
+
+@media (min-width: 1088px) {
+  #___gatsby {
+    padding-bottom: 510px;
+  }
 }
 
 .footer {
   position: absolute;
-  bottom: -90vh;
+  bottom: 0;
+  height: 1200px;
   width: 100%;
+}
+
+@media (min-width: 1088px) {
+  .footer {
+    height: 510px;
+  }
 }
