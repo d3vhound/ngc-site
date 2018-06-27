@@ -8,7 +8,7 @@
 
 import createHistory from "history/createBrowserHistory"
 
-const timeout = 600
+const timeout = 500
 const historyExitingEventType = `history::exiting`
 
 const getUserConfirmation = (pathname, callback) => {

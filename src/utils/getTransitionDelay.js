@@ -1,19 +1,19 @@
 const getTransitionStyles = timeout => {
   return {
     exiting: {
-      transform: 'translateX(0vw) skewX(0deg)',
-      transition: `all 500ms ease`,
+      transform: 'translateX(0vw)',
+      transition: `all 300ms linear`,
     },
     exited: {
-      transform: 'translateX(0vw) skewX(0deg)',
-      transition: `all 500ms ease`,
+      transform: 'translateX(0vw)',
+      transition: `all 300ms linear`,
     },
     entering: {
-      transition: `all 600ms ease`,
-      transform: 'translateX(-100vw) skewX(-20deg)',
+      transition: `all 300ms linear`,
+      transform: 'translateX(-100vw)',
     },
     entered: {
-      transform: 'translateX(200vw) skewX(-40deg)',
+      transform: 'translateX(100vw)',
     },
   }
 }
