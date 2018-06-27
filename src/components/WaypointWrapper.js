@@ -27,7 +27,7 @@ class WaypointWrapper extends React.Component {
     }) 
 
     return (
-      <Waypoint bottomOffset='500px' onEnter={this.addReach}>
+      <Waypoint bottomOffset='250px' onEnter={this.addReach}>
         <div className={ReachStyles}>
           {this.props.children}
         </div>
