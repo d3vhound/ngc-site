@@ -23,7 +23,7 @@ const ProjectSections = ({ node }) => {
       offsetYMin={-20}
      
     >
-        <Img backgroundColor={'#f1f1f1'} className="project-image" sizes={node.mockup.sizes} alt={node.title + " project image"} />
+        <Img imgStyle={{ objectFit: 'contain' }} backgroundColor={'#f1f1f1'} className="project-image" sizes={node.mockup.sizes} alt={node.title + " project image"} />
     </Parallax>
     </ProjectList>
   )
