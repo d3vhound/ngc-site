@@ -28,4 +28,5 @@ if (typeof document !== 'undefined') {
 
 export let replaceHistory = () => history
 
-export { historyExitingEventType, timeout }
+
+export { historyExitingEventType, timeout, }

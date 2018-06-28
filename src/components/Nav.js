@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import classNames from 'classnames'
 import posed from 'react-pose'
 import { tween } from "popmotion";
-import { Link } from 'gatsby'
+import { Link } from './Link'
 import Logo from './Logo'
 
 const TopBar = posed.div({
@@ -56,7 +56,7 @@ const NavDesktop = ({ isOpen, navItems, onClick }) => (
     <ul className="page-home">
       {navItems.map(({ url, name }) => (
         <NavItem key={name}>
-          <Link onClick={onClick} to={url}>{name}</Link>
+          <Link to={url}>{name}</Link>
         </NavItem>
       ))}
     </ul>
@@ -77,7 +77,7 @@ const NavMobile = ({ isOpen, navItems, onClick }) => (
         <ul>
           {navItems.map(({ url, name}) => (
             <NavItem key={name}>
-              <Link onClick={onClick} to={url}>{name}</Link>
+              <Link to={url}>{name}</Link>
             </NavItem>
           ))}
         </ul>
@@ -155,20 +155,6 @@ class Nav extends Component {
       }))
     }
 
-    const handleCloseNav = () => {
-      this.setState(prevState => ({
-        isOpenDesktop: !prevState.isOpenDesktop,
-        navX: !prevState.navX
-      }))
-    }
-
-    const handleCloseNavM = () => {
-      this.setState(prevState => ({
-        isOpenMobile: !prevState.isOpenMobile,
-        navX: !prevState.navX
-      }))
-    }
-
     return (
       <React.Fragment>
 
@@ -198,9 +184,9 @@ class Nav extends Component {
         </div>
 
         
-        <NavDesktop onClick={handleCloseNav} isOpen={this.state.isOpenDesktop} navItems={navLinks}/>
+        <NavDesktop isOpen={this.state.isOpenDesktop} navItems={navLinks}/>
 
-        <NavMobile onClick={handleCloseNavM} isOpen={this.state.isOpenMobile} navItems={navLinks}/>
+        <NavMobile isOpen={this.state.isOpenMobile} navItems={navLinks}/>
 
       </React.Fragment>
     )

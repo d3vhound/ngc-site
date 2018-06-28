@@ -1,7 +1,5 @@
  /* eslint-disable */
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
-import LazyLoad from 'react-lazy-load';
 import Button from '../components/Button'
 
 class MainHero extends Component {
@@ -132,7 +130,7 @@ class MainHero extends Component {
     });
       
   }
-  
+
   render() {
     return (
     <>

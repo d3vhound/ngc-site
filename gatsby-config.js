@@ -13,6 +13,7 @@ module.exports = {
       options: {
         fonts: [
           `open sans\:700,800`,
+          `IBM plex mono\:400,600`
         ]
       }
     },

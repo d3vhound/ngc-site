@@ -10,7 +10,7 @@ const getTransitionStyles = timeout => {
     },
     entering: {
       transition: `all ${timeout}ms ease`,
-      transform: 'translateX(-100vw)',
+      transform: 'translateX(-110vw)',
     },
     entered: {
       transform: 'translateX(100vw)',

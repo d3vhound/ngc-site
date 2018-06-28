@@ -25,7 +25,6 @@ const Layout = ({ children, data }) => (
     `}
     render={data => (
       <React.Fragment>
-        <ParallaxProvider>
         <Transition> 
           <div className="base-overlay">
           </div>
@@ -36,7 +35,7 @@ const Layout = ({ children, data }) => (
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
           ]}
-        >
+          >
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
         </Helmet>
         <Nav />
@@ -44,13 +43,14 @@ const Layout = ({ children, data }) => (
         
 
           <TransitionTwo>
+          <ParallaxProvider>
           <div id="body">
             {children}
           </div>
+          </ParallaxProvider>
           </TransitionTwo>
 
           <Footer />
-          </ParallaxProvider>
         
       </React.Fragment>
     )}
