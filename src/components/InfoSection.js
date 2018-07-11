@@ -34,7 +34,7 @@ export default () => (
       </div>
     </div>
     <div className="container has-text-centered">
-      <Button to="/process" color="dark" text="Our Process" />
+      <Button to="/story" color="dark" text="Our Story" />
     </div>
   </section>
 )

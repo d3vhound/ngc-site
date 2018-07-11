@@ -375,3 +375,7 @@
 #nav-mobile .head .container-logo svg {
   height: 100%;
 }
+
+.container-logo svg polygon {
+	transform: translate(10px, 10px)
+}

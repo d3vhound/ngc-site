@@ -2,10 +2,7 @@
 import React, { Component } from 'react'
 import Button from '../components/Button'
 
-class MainHero extends Component {
-
-  componentDidMount() {
-      let cvs, ctx;
+let cvs, ctx;
       let waves = [];
       let waveHeight = 60;
       let colours = ["#393895", "#ac2e74", "#f78f1d", "#f6f388"];
@@ -97,8 +94,12 @@ class MainHero extends Component {
         }
 
       }
+
+class MainHero extends Component {
+
+  componentDidMount() {
       
-      init()
+    window.addEventListener('load', init)
       
     window.addEventListener('load', function () {
       var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
@@ -129,7 +130,11 @@ class MainHero extends Component {
       }
     });
       
-  }
+	}
+
+	componentWillUnmount() {
+		window.removeEventListener('load', init)
+	}
 
   render() {
     return (
