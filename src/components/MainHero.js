@@ -100,7 +100,7 @@ class MainHero extends Component {
 
   componentDidMount() {
       
-		init()
+		// init()
 		
     window.addEventListener('load', function () {
       var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
