@@ -1,0 +1,363 @@
+.ng-footer{
+	margin-top: 150px;
+	width: 100%;
+	background: #4C4C4C;
+	position: relative;
+	padding-top: 40px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+.ng-footer-inner{
+	max-width: 1000px;
+	width: 100%;
+	margin: auto;
+	padding: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-around;
+	box-sizing: border-box;
+}
+
+.ng-footer-social-icon {
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	border-top-left-radius: 10px 5px 20px;
+	border-bottom-left-radius: 10px 5px 20px;
+	border-top-right-radius: 10px 5px 20px;
+	border-bottom-right-radius: 10px 5px 20px;
+	background: #4C4C4C;
+	display: inline-block;
+	transition: all .2s ease;
+	opacity: .4;
+	border: 1px solid rgba(0,0,0,0);
+}
+
+.ng-footer-social-icon:hover {
+	/* border: 1px solid rgba(255,255,255,1); */
+	background: #000;
+	box-shadow: 0px 3px 10px rgba(0,0,0,.6);
+	opacity: 1;
+	transform: scale(1.1);
+}
+
+.ng-footer-social-icon img{
+	max-width: 100%;
+}
+
+.ng-footer-contact-button{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	background: #000;
+	padding: 22px 25px;
+	color: #fff;
+	text-align: center;
+	width: 60%;
+	max-width: 600px;
+	box-shadow: 0px 7px 20px rgba(0,0,0,.5);
+	letter-spacing: 3px;
+	font-size: 18px;
+	transition: all .2s ease;
+	text-decoration: none;
+}
+
+.ng-footer-contact-button:hover {
+	transform: scale(1.06) translateY(-51%) translateX(-47%);
+	box-shadow: 0px 8px 30px rgba(0,0,0,.5);
+}
+
+.ng-footer-box{
+	width: 30%;
+	padding: 15px;
+	flex-shrink: 0;
+	font-size: 11px;
+	color: #c3c2c2;
+	letter-spacing: 2px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.ng-footer-logo{
+	display: inline-block;
+	/* transform: scale(1) translateY(0px) rotate(0deg); */
+}
+
+.ng-logo-with-blocks{
+	width: 60px;
+	overflow: visible;
+}
+
+
+.ng-logo-with-blocks g{
+	-webkit-transform: translateX(0);
+          transform: translateX(0);
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.ng-footer-logo:hover #block1 {
+	-webkit-transform: rotate(22deg) translate3d(1.375em, 1.25em, 0);
+          transform: rotate(22deg) translate3d(1.375em, 1.25em, 0);
+					transition-delay: 100ms;
+}
+
+.ng-footer-logo:hover #block2 {
+	-webkit-transform: rotate(17deg) translate3d(5.375em, 3.25em, 0);
+          transform: rotate(17deg) translate3d(5.375em, 3.25em, 0);
+}
+
+.ng-footer-logo:hover #block3 {
+	-webkit-transform: rotate(7deg) translate3d(3.375em, 1.25em, 0);
+          transform: rotate(7deg) translate3d(3.375em, 1.25em, 0);
+					transition-delay: 50ms;
+}
+
+.ng-footer-logo:hover #block4 {
+	-webkit-transform: rotate(-17deg) translate3d(5.375em, 3.25em, 0);
+          transform: rotate(-17deg) translate3d(5.375em, 3.25em, 0);
+					transition-delay: 80ms;
+}
+
+.ng-footer-logo:hover #block5 {
+	-webkit-transform: rotate(10deg) translate3d(-5.375em, -3.25em, 0);
+          transform: rotate(10deg) translate3d(-5.375em, -3.25em, 0);
+					transition-delay: 120ms;
+}
+
+.ng-footer-logo:hover #block6 {
+	-webkit-transform: rotate(50deg) translate3d(-10.375em, 1.25em, 0);
+          transform: rotate(50deg) translate3d(-10.375em, 1.25em, 0);
+					transition-delay: 10ms;
+}
+
+.ng-footer-logo:hover #block7 {
+	-webkit-transform: rotate(15deg) translate3d(-9.375em, -13.25em, 0);
+          transform: rotate(15deg) translate3d(-9.375em, -13.25em, 0);
+					transition-delay: 10ms;
+}
+
+.ng-footer-logo:hover #block8 {
+	-webkit-transform: rotate(-23deg) translate3d(-3.375em, -10.25em, 0);
+          transform: rotate(-23deg) translate3d(-3.375em, -10.25em, 0);
+					transition-delay: 40ms;
+}
+
+.ng-footer-logo:hover #block9 {
+	-webkit-transform: rotate(-45deg) translate3d(5.375em, 3.25em, 0);
+          transform: rotate(-45deg) translate3d(5.375em, 3.25em, 0);
+					transition-delay: 60ms;
+}
+
+.ng-footer-logo:hover #block10 {
+	-webkit-transform: rotate(1deg) translate3d(15.375em, -3.25em, 0);
+          transform: rotate(1deg) translate3d(15.375em, -3.25em, 0);
+					transition-delay: 10ms;
+}
+
+.ng-footer-logo:hover #block11 {
+	-webkit-transform: rotate(17deg) translate3d(5.375em, 3.25em, 0);
+          transform: rotate(17deg) translate3d(5.375em, 3.25em, 0);
+}
+
+
+.ng-footer-logo img{
+	width: 60px;
+}
+
+.ng-footer-center-box{
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.ng-footer-right-box{
+	padding-top: 30px;
+	text-align: right;
+	box-sizing: border-box;
+}
+
+.ng-footer-left-box{
+	text-align: left;
+	box-sizing: border-box;
+}
+
+.ng-footer-hiring-button{
+	text-decoration: none;
+	color: rgb(231, 231, 231);
+	padding: 10px 12px;
+	width: 90%;
+	max-width: 160px;
+	display: inline-block;
+	margin: 20px 0px;
+	background: #2F2F2F;
+	/* box-shadow: inset 0px 1px 3px rgba(0,0,0,.14); */
+	letter-spacing: 2px;
+	font-size: 11px;
+	transition: all .2s ease;
+}
+
+.ng-footer-hiring-button:hover{
+	transform: scale(1.1) translateY(3px);
+	box-shadow: 0px 8px 30px rgba(0,0,0,.2);
+
+}
+
+@media only screen and (max-width: 985px) {
+	.ng-footer-center-box{
+		width: 100%;
+		order: 1;
+	}
+
+	.ng-footer-right-box{
+		width: 40%;
+		order: 3;
+	}
+
+	.ng-footer-left-box{
+		width: 40%;
+		order: 2;
+	}
+}
+
+@media only screen and (max-width: 820px) {
+	.ng-footer-center-box{
+		width: 100%;
+		text-align: center;
+		order: 1;
+	}
+
+	.ng-footer-right-box{
+		text-align: center;
+		width: 100%;
+		order: 3;
+	}
+
+	.ng-footer-left-box{
+		text-align: center;
+		width: 100%;
+		order: 2;
+		max-width: 500px;
+	}
+
+	.ng-footer-social-icon {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+.ng-version-badge{
+	margin: 25px;
+	margin-top: 0px;
+	padding: 3px 6px;
+	border-radius: 35px;
+	font-size: 10px;
+	color: rgb(209, 209, 209);
+	background: rgb(112, 112, 112);
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.ng-footer {
+	.cls-1 {
+		fill: #383993;
+	}
+	.cls-2 {
+		fill: #2b2c59;
+	}
+	.cls-3 {
+		fill: #666eb2;
+	}
+	.cls-4 { 
+		fill: #6f3381;
+	} 
+	.cls-5 { 
+		fill: #482c5e;
+	} 
+	.cls-6 {
+		fill: #8d50a3;
+	}
+	.cls-7 {
+		fill: #7b2a8f;
+	} 
+	.cls-8 {
+		fill: #a855bc;
+	}
+	.cls-9 {
+		fill: #582b5a;
+	} 
+	.cls-10 {
+		fill: #a92e72;
+	} 
+	.cls-11 {
+		fill: #ef6ba3;
+	}
+	.cls-12 {
+		fill: #8c2a64;
+	}
+	.cls-13 {
+		fill: #cb4379;
+	}
+	.cls-14 {
+		fill: #e68094;
+	}
+	.cls-15 {
+		fill: #a5265a;
+	}
+	.cls-16 {
+		fill: #ee474c;
+	}
+	.cls-17 {
+		fill: #f69f9b;
+	}
+	.cls-18 {
+		fill: #c42a35;
+	}
+	.cls-19 {
+		fill: #f16a44;
+	}
+	.cls-20 {
+		fill: #c64528;
+	}
+	.cls-21 {
+		fill: #fccea2;
+	} 
+	.cls-22 {
+		fill: #ad4c25;
+	}
+	.cls-23 {
+		fill: #f68d1e;
+	}
+	.cls-24 {
+		fill: #f7b579;
+	}
+	.cls-25 {
+		fill: #a5762b;
+	}
+	.cls-26 {
+		fill: #faac1f;
+	} 
+	.cls-27 {
+		fill: #f9cd87;
+	}
+	.cls-28 {
+		fill: #c2882b;
+	}
+	.cls-29 {
+		fill: #fde63b;
+	}
+	.cls-30 {
+		fill: #f9e98f;
+	}
+	.cls-31 {
+		fill: #e4bf43;
+	}
+	.cls-32 {
+		fill: #f9f187;
+	}
+	.cls-33 {
+		fill: #fbf5b4;
+	}
+} 

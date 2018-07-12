@@ -1,6 +1,7 @@
  /* eslint-disable */
 import React, { Component } from 'react'
 import Button from '../components/Button'
+import { historyEnteringEventType } from "../../gatsby-browser"
 
 let cvs, ctx;
       let waves = [];
@@ -16,7 +17,7 @@ let cvs, ctx;
           var temp = new wave(colours[i], 1, 6)
         }
 
-        setInterval(update, 17)
+        setInterval(update, 30)
       }
 
       const update = (array) => {
@@ -99,8 +100,8 @@ class MainHero extends Component {
 
   componentDidMount() {
       
-    window.addEventListener('load', init)
-      
+		init()
+		
     window.addEventListener('load', function () {
       var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
       
@@ -130,10 +131,6 @@ class MainHero extends Component {
       }
     });
       
-	}
-
-	componentWillUnmount() {
-		window.removeEventListener('load', init)
 	}
 
   render() {
