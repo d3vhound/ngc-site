@@ -16,7 +16,7 @@ const TopBar = posed.div({
   closed: { 
     y: '-100%',
     opacity: 0,
-    transition: () => false 
+		transition: tween 
   },
 })
 
@@ -31,7 +31,7 @@ const MobileTopBar = posed.div({
   closed: {
     x: '-100%',
     opacity: 0,
-    transition: () => false
+		transition: tween 
   },
 })
 
