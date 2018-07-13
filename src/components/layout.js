@@ -8,8 +8,8 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import Header from './header'
 import Footerv2 from './Footerv2'
 import '../assets/css/index.scss'
-// import Transition from '../components/transition'
-// import TransitionTwo from '../components/transition2'
+import Transition from '../components/transition'
+import TransitionTwo from '../components/transition2'
 
 
 const Layout = ({ children, data }) => (
@@ -25,10 +25,10 @@ const Layout = ({ children, data }) => (
     `}
     render={data => (
       <React.Fragment>
-        {/* <Transition> 
+        <Transition> 
           <div className="base-overlay">
           </div>
-        </Transition> */}
+        </Transition>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -42,13 +42,13 @@ const Layout = ({ children, data }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         
 
-          {/* <TransitionTwo> */}
+          <TransitionTwo>
           <ParallaxProvider>
           <div id="body">
             {children}
           </div>
           </ParallaxProvider>
-          {/* </TransitionTwo> */}
+          </TransitionTwo>
 
           <Footerv2 />
         
