@@ -38,7 +38,7 @@
 .ng-header-new {
 	background: #171717;
 	position: relative;
-	height: 90vh;
+	height: 100%;
 	overflow: hidden;
 	width: 100%;
 	display: flex;
@@ -55,6 +55,9 @@
 }
 
 .ng-header-track-new {
+	margin-top: 15rem;
+	margin-bottom: 15rem;
+	padding: 5rem;
 	width: 1px;
 	height: 1px;
 }
@@ -227,6 +230,7 @@
 	.ng-header-new {
 		flex-direction: column;
 		padding-top: 150px;
+		height: 100%;
 	}
 	.ng-header-title-new{
 		padding-left: 0px;
