@@ -17,14 +17,14 @@ const ProjectSections = ({ node }) => {
       <p className="project-short-desc">{node.shortDescription || "Test"}</p>
       <Button to={'/projects/' + node.slug} color="dark" text="More info"/>
     </div>
-    <Parallax
+    {/* <Parallax
       className="column image-column"
       offsetYMax={40}
       offsetYMin={0}
      
-    >
+    > */}
         <Img imgStyle={{ objectFit: 'contain' }} backgroundColor={'#f1f1f1'} className="project-image" sizes={node.mockup.sizes} alt={node.title + " project image"} />
-    </Parallax>
+    {/* </Parallax> */}
     </ProjectList>
   )
 }

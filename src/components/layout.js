@@ -44,11 +44,11 @@ const Layout = ({ children, data }) => (
         
 
           {/* <TransitionTwo> */}
-          <ParallaxProvider>
+          {/* <ParallaxProvider> */}
           <div id="body">
             {children}
           </div>
-          </ParallaxProvider>
+          {/* </ParallaxProvider> */}
           {/* </TransitionTwo> */}
 					
 					<USASection />
