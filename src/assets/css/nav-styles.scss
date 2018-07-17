@@ -3,8 +3,8 @@
   z-index: 22;
   left: 0px;
   top: 0px;
-  height: 195px;
-  width: 130px;
+  height: 150px;
+  width: 100px;
   -webkit-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -126,7 +126,7 @@
 }
 
 #nav-btn.scroll {
-  background-color: #FFFFFF;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 #nav-btn .content .action {
