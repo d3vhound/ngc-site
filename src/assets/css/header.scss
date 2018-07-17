@@ -38,9 +38,7 @@
 .ng-header-new {
 	background: #171717;
 	position: relative;
-	height: 60vh;
-	padding-top: 100px;
-	min-height: 600px;
+	height: 90vh;
 	overflow: hidden;
 	width: 100%;
 	display: flex;
@@ -228,6 +226,7 @@
 @media only screen and (max-width: 720px) {
 	.ng-header-new {
 		flex-direction: column;
+		padding-top: 150px;
 	}
 	.ng-header-title-new{
 		padding-left: 0px;

@@ -11,7 +11,7 @@ import Img from 'gatsby-image';
 
 const ProjectSections = ({ node }) => {
   return (
-    <ProjectList backgroundImg={node.backgroundImage.sizes}>
+    <ProjectList backgroundImage={node.backgroundImage.resolutions.src}>
     <div className="column center-content is-one-third">
       <h1 className="project-title">{node.title}</h1>
       <h2 className="project-type">{node.type || "Project Type"}</h2>
@@ -56,6 +56,11 @@ export const IndexQuery = graphql`
           slug
           type
           backgroundImage {
+						resolutions(width: 1080) {
+							width
+							height
+							src
+						}
             sizes(maxWidth: 1800) {
               ...GatsbyContentfulSizes_withWebp_noBase64
             }
