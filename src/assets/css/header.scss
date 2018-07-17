@@ -1,0 +1,217 @@
+@keyframes headerProgressBar {
+	0% { transform: scaleY(1); opacity: 0;}
+	14% { transform: scaleY(1); opacity: 0;}
+	15% { transform: scaleY(1); opacity: 1;}
+	95% { transform: scaleY(600); opacity: 1;}
+	100% { transform: scaleY(600); opacity: 0; animation-timing-function: step-end;}
+}
+
+@keyframes headerProgressBarY {
+	0% { transform: scaleX(1); opacity: 0;}
+	14% { transform: scaleX(1); opacity: 0;}
+	15% { transform: scaleX(1); opacity: 1;}
+	95% { transform: scaleX(300); opacity: 1;}
+	100% { transform: scaleX(300); opacity: 0; animation-timing-function: step-end;}
+}
+
+
+@keyframes headerRotation {
+	0% { transform: translateX(-50%) translateY(-50%) scale(1) rotate(20deg); opacity: 0; animation-timing-function: linear;}
+	2.5% { transform: translateX(-50%) translateY(-50%) scale(1) rotate(10deg); opacity: 0;}
+	5% { transform: translateX(-50%) translateY(-50%) scale(1) rotate(0deg); opacity: 1;}
+	20% { transform: translateX(-50%) translateY(-50%) scale(1) rotate(0deg); opacity: 1; animation-timing-function: linear;}
+	22.5% { transform: translateX(-50%) translateY(-50%) scale(1) rotate(-10deg); opacity: 0;}
+	25% { transform: translateX(-50%) translateY(-50%) scale(1) rotate(-20deg); opacity: 0;}
+	99% { transform: translateX(-50%) translateY(-50%) scale(1) rotate(-20deg); opacity: 0; animation-timing-function: step-end;}
+	100% { transform: translateX(-50%) translateY(-50%) scale(1) rotate(20deg); opacity: 0;}
+}
+
+
+.ng-header-new {
+	background: #171717;
+	position: relative;
+	height: 600px;
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(232, 232, 232);
+	justify-content: space-between;
+}
+
+.ng-header-new img {
+	max-width: 100%;
+	display: inline-block;
+	max-height: 450px;
+}
+
+.ng-header-track-new {
+	width: 1px;
+	height: 1px;
+}
+
+.ng-header-title-new{
+	font-size: 42px;
+	letter-spacing: 2px;
+	font-weight: 300;
+	text-align: left;
+	padding-left: 40px;
+	word-wrap: break-word;
+	word-break:keep-all;
+	text-align: left;
+}
+
+.ng-menu-progress-bar{
+	position: absolute;
+	bottom: 300px;
+	left: 10px;
+	width: 1px;
+	height: 1px;
+	margin-right: 10px;
+	background: rgb(232, 232, 232);
+	animation: 5s infinite headerProgressBar;
+	animation-timing-function: ease-in-out;
+}
+
+
+.ng-menu-spacer-spot{
+	width: 1px;
+	height: 1px;
+}
+
+
+.ng-header-item-new {
+	position: absolute;
+	transform-origin: 2600px 50%;
+	transform: translateX(-50%) translateY(-50%) scale(1) rotate(20deg); opacity: 0;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	animation: 25s infinite headerRotation;
+	animation-timing-function: ease-in-out;
+	will-change: transform;
+}
+
+.ng-header-item-web-new {
+	position: absolute;
+	transform-origin: 2600px 50%;
+	transform: translateX(-50%) translateY(-50%) scale(1) rotate(20deg); opacity: 0;
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	animation: 25s infinite headerRotation;
+	animation-timing-function: ease-in-out;
+	will-change: transform;
+	height: 100%;
+}
+
+.ng-header-mobile-new img {
+	max-width: 200px;
+}
+
+.ng-header-web-new img {
+	max-width: 400px;
+}
+
+.item-5 {
+	animation-delay: 20s;
+}
+
+.item-4 {
+ animation-delay: 15s;
+}
+
+.item-3 {
+ animation-delay: 10s;
+}
+
+.item-2 {
+ animation-delay: 5s;
+}
+
+.ng-code-company-title {
+	white-space: nowrap;
+}
+
+@media only screen and (max-width: 1040px) {
+	.ng-header-title-new{
+		text-align: left;
+		width: 350px;
+		padding-left: 50px;
+	}
+	.ng-code-company-title {
+		font-size: 20px;
+		text-align: left;
+		letter-spacing: 3px;
+	}
+
+	.ng-header-item-new {
+		padding-right: 100px;
+	}
+
+	.ng-header-item-web-new {
+		padding-right: 100px;
+	}
+}
+
+@media only screen and (max-width: 840px) {
+	.ng-header-title-new{
+		width: 250px;
+		text-align: left;
+		padding-left: 30px;
+	}
+	.ng-code-company-title {
+		text-align: left;
+		font-size: 20px;
+		letter-spacing: 3px;
+	}
+
+	.ng-header-item-new {
+		padding-right: 0px;
+	}
+
+	.ng-header-item-web-new {
+		padding-right: 0px;
+	}
+}
+
+
+@media only screen and (max-width: 720px) {
+	.ng-header-new {
+		flex-direction: column;
+	}
+	.ng-header-title-new{
+		padding-left: 0px;
+	}
+	.ng-header-title-new {
+		padding-top: 40px;
+		text-align: center;
+	}
+	.ng-header-item-web-new {
+		transform-origin: 50% 2600px;
+	}
+	.ng-header-item-new {
+		transform-origin: 50% 2600px;
+	}
+	.ng-header-mobile img {
+		max-width: 150px;
+	}
+	.ng-header-web img {
+		max-width: 300px;
+	}
+
+	.ng-menu-progress-bar{
+		bottom: 10px;
+		left: 50%;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		animation: 5s infinite headerProgressBarY;
+		animation-timing-function: ease-in-out;
+	}
+}

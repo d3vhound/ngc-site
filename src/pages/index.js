@@ -1,5 +1,6 @@
 import React from 'react'
 import MainHero from '../components/MainHero'
+import Hero from '../components/Hero'
 import InfoSection from '../components/InfoSection'
 import Layout from '../components/layout'
 import Button from '../components/Button'
@@ -33,7 +34,7 @@ const ProjectSections = ({ node }) => {
 
 const IndexPage = ({data}) => (
   <Layout>
-    <MainHero title="NextGen Code Company" subtitle="We are a software development agency that specializes in developing cost-effective apps for small businesses around the world."/>
+    <Hero />
     <InfoSection />
     
 			{data.allContentfulProject.edges.map((edge) => <ProjectSections key={edge.node.title} node={edge.node} />)}
