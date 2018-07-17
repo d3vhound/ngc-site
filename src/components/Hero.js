@@ -4,6 +4,8 @@ class Hero extends Component {
 
   render() {
     return (
+			<section className="section hero-new">
+			<div className="container">
 			<div className='ng-header-new'>
 				<div className='ng-header-title-new'>
 					NEXT<b>GEN</b> <span className='ng-code-company-title'>Code Company</span>
@@ -68,6 +70,8 @@ class Hero extends Component {
 				<div className='ng-menu-progress-bar'></div>
 				<div className='ng-menu-spacer-spot'></div>
 			</div>
+			</div>
+			</section>
     );
   }
 }

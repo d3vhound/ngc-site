@@ -26,11 +26,21 @@
 	100% { transform: translateX(-50%) translateY(-50%) scale(1) rotate(20deg); opacity: 0;}
 }
 
+.hero-new {
+	background: #171717;
+}
+
+.hero-new div.container {
+	max-width: 1400px;
+}
+
 
 .ng-header-new {
 	background: #171717;
 	position: relative;
-	height: 600px;
+	height: 60vh;
+	padding-top: 100px;
+	min-height: 600px;
 	overflow: hidden;
 	width: 100%;
 	display: flex;
@@ -65,7 +75,8 @@
 .ng-menu-progress-bar{
 	position: absolute;
 	bottom: 300px;
-	left: 10px;
+	// left: 10px;
+	right: 10px;
 	width: 1px;
 	height: 1px;
 	margin-right: 10px;
@@ -74,6 +85,25 @@
 	animation-timing-function: ease-in-out;
 }
 
+.header-badge {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	right: 100px;
+	height: 100%;
+	visibility: hidden;
+}
+
+.header-badge .ng-version-badge {
+	margin: 0;
+}
+
+@media (min-width: 1000px) {
+	.header-badge {
+		visibility: visible;
+	}
+}
 
 .ng-menu-spacer-spot{
 	width: 1px;
@@ -137,6 +167,19 @@
 
 .ng-code-company-title {
 	white-space: nowrap;
+}
+
+.ng-header-item-title {
+	margin: 30px auto 20px;
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+
+.ng-header-item-subtitle {
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 400;
+	font-size: .8rem;
 }
 
 @media only screen and (max-width: 1040px) {

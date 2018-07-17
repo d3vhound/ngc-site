@@ -17,6 +17,13 @@ const Header = ({ siteTitle }) => {
 			<img src={USAFlag}/>
 			<span>en-US</span>
 		</div> */}
+
+		<div className="header-badge">
+			<div className="ng-version-badge">
+				v2
+			</div>
+		</div>
+
   </div>
   )
 }

@@ -40,6 +40,12 @@ body {
   transition: all .25s ease;
 }
 
+@media(min-width: 1000px) {
+	#header-desktop {
+		z-index: 21;
+	}
+}
+
 @media (max-width: 480px) {
   #header-desktop {
     top: 10px;
@@ -236,11 +242,24 @@ canvas {
 
 .home-breadcrumb a {
 	color: #fff;
-	text-decoration: underline;
+	text-decoration: none;
+	width: 100px;
+	display: flex;
+	align-items: center;
+}
+
+.home-breadcrumb a svg {
+	transition: all .3s ease;
+}
+
+.home-breadcrumb a:hover svg {
+	transform: translateX(-5px);
 }
 
 .home-breadcrumb {
-	font-size: 1rem;
+	position: relative;
+	font-size: .8rem;
+	font-weight: 600;
 	padding-left: 10px;
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }

@@ -221,7 +221,7 @@
   width: 100%;
   top: 0px;
   left: 0px;
-  padding: 160px 130px 130px 130px;
+  padding: 200px 130px 130px 130px;
   max-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -421,4 +421,20 @@
 	font-size: 10px;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
+}
+
+.social-links div {
+	z-index: 1000;
+	display: block;
+	background: #000;
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+	margin: 5px auto;
+}
+
+.social-links {
+	position: absolute;
+	left: 10px;
+	bottom: 25%;
 }

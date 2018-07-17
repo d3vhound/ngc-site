@@ -5,6 +5,11 @@ import { tween } from "popmotion";
 import { Link } from './Link'
 import Logo from './Logo'
 import Tango from '../assets/images/tango.png'
+import Facebook from '../assets/images/logo-facebook.svg'
+import Twitter from '../assets/images/logo-twitter.svg'
+import Linkedin from '../assets/images/logo-linkedin.svg'
+import Pinterest from '../assets/images/logo-pinterest.svg'
+import Instagram from '../assets/images/logo-instagram.svg'
 
 const TopBar = posed.div({
   open: { 
@@ -61,6 +66,19 @@ const TangoMenu = posed.div({
 	}
 })
 
+const SocialLinks = posed.div({
+	open: {
+		opacity: 1,
+		x: '0px',
+		transition: tween 
+	},
+	closed: {
+		opacity: 0,
+		x: '-100px',
+		transition: tween 
+	}
+})
+
 const NavDesktop = ({ isOpen, navItems, onClick }) => (
   <TopBar id="nav" pose={isOpen ? 'open' : 'closed'}>
   <div className="content">
@@ -94,6 +112,24 @@ const NavDesktop = ({ isOpen, navItems, onClick }) => (
 				<div className='ng-bubble-medium-alt1'></div>
 				<img alt="tango" src={Tango} />
 			</TangoMenu>
+			<SocialLinks className="social-links">
+				<div>
+					<img alt="Facebook" src={Facebook} />
+				</div>
+				<div>
+					<img alt="Twitter" src={Twitter} />
+				</div>
+				<div>
+					<img alt="Pinterest" src={Pinterest} />
+				</div>
+				<div>
+					<img alt="Linkedin" src={Linkedin} />
+				</div>
+
+				<div>
+					<img alt="Instagram" src={Instagram} />
+				</div>
+			</SocialLinks>
     </ul>
     </div>
   	</div>

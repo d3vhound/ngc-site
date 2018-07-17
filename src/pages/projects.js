@@ -12,7 +12,7 @@ const ProjectSections = ({ node }) => {
     <ProjectList backgroundImg={node.backgroundImage.sizes} classes="section project-section">
       <div className="column center-content is-one-third">
         <h1 className="project-title">{node.title}</h1>
-        <h2 className="project-type project-type-underline">{node.type || "Project Type"}</h2>
+        <h2 className="project-type">{node.type || "Project Type"}</h2>
         <Button to={'/projects/' + node.slug} color="dark" text="More info" />
       </div>
       {/* <Parallax

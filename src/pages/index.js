@@ -1,5 +1,5 @@
 import React from 'react'
-import MainHero from '../components/MainHero'
+// import MainHero from '../components/MainHero'
 import Hero from '../components/Hero'
 import InfoSection from '../components/InfoSection'
 import Layout from '../components/layout'
@@ -14,8 +14,7 @@ const ProjectSections = ({ node }) => {
     <ProjectList backgroundImg={node.backgroundImage.sizes}>
     <div className="column center-content is-one-third">
       <h1 className="project-title">{node.title}</h1>
-      <h2 className="project-type project-type-underline">{node.type || "Project Type"}</h2>
-      <p className="project-short-desc">{node.shortDescription || "Test"}</p>
+      <h2 className="project-type">{node.type || "Project Type"}</h2>
       <Button to={'/projects/' + node.slug} color="dark" text="More info"/>
     </div>
     {/* <Parallax
