@@ -10,6 +10,7 @@ const Header = ({ siteTitle }) => {
 				v2
 			</div>
 		</div>
+		
   )
 }
 
