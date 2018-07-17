@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import WaypointWrapper from './WaypointWrapper'
+// import WaypointWrapper from './WaypointWrapper'
 import Img from 'gatsby-image';
 
 class ProjectList extends Component {
   render() {
     return (
-      <WaypointWrapper>
+			<div className="section project_section reach">
         {/* <div className="illu illu-right">
 					<div className="bg bg-right">
-						<img alt="project bg background" src={this.props.backgroundImage} />
+					<img alt="project bg background" src={this.props.backgroundImage} />
 					</div>
         </div>  */}
         <div className="container">
@@ -16,7 +16,7 @@ class ProjectList extends Component {
             {this.props.children}
           </div>
         </div>
-      </WaypointWrapper>
+			</div>
     )
   }
 }
