@@ -3,7 +3,7 @@ import SubHero from '../components/SubHero'
 
 import Layout from '../components/layout'
 
-import MrPinkImg from ''
+import MrPinkImg from '../assets/images/mr_pink.jpg'
 
 const MrPink = () => (
 	<Layout>
