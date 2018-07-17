@@ -7,7 +7,7 @@ class ProjectList extends Component {
     return (
       <WaypointWrapper>
         <div className="illu illu-right">
-          <Img backgroundColor={'#ffffff'} outerWrapperClassName="bg bg-right" alt="project bg background" style={{width: '100%', height: '100%', position: 'absolute'}}sizes={this.props.backgroundImg} />
+          <Img backgroundColor={'transparent'} outerWrapperClassName="bg bg-right" alt="project bg background" style={{width: '100%', height: '100%', position: 'absolute'}} sizes={this.props.backgroundImg} />
         </div> 
         <div className="container">
           <div className="columns reverse-column-order">

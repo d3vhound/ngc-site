@@ -24,7 +24,7 @@ const ProjectSections = ({ node }) => {
      
 		> */}
 		<div className="column image-column">
-        <Img imgStyle={{ objectFit: 'contain' }} backgroundColor={'#f1f1f1'} className="project-image" sizes={node.mockup.sizes} alt={node.title + " project image"} />
+        <Img imgStyle={{ objectFit: 'contain' }} backgroundColor={'transparent'} className="project-image" sizes={node.mockup.sizes} alt={node.title + " project image"} />
 		</div>
     {/* </Parallax> */}
     </ProjectList>
