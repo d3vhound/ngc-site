@@ -35,6 +35,15 @@ module.exports = {
       options: {
         fs_org: 'CZP30',
       },
-    },  
+		},
+		{
+			resolve: 'gatsby-plugin-mixpanel',
+			options: {
+				apiToken: 'bcaca80510d095ba6acc1f7e6d09d3a1',
+				debug: true,
+				enableOnDevMode: true,
+				pageViews: null
+			},
+		},  
   ],
 }

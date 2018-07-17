@@ -234,7 +234,25 @@
 }
 
 #nav .content .container-prLink {
-  width: 28%;
+	width: 450px;
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#nav .content .container-prLink .page-home {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
+	.ng-tango-menu {
+		position: absolute;
+		right: 100px;
+		bottom: 25%;
+	}
 }
 
 #nav .content .container-prLink ul {
@@ -245,7 +263,7 @@
 #nav .content .container-prLink ul li {
   position: relative;
   margin-bottom: 40px;
-  padding-left: 40px;
+  // padding-left: 40px;
 }
 
 #nav .content .container-prLink ul li a {
@@ -378,4 +396,29 @@
 
 .container-logo svg polygon {
 	transform: translate(10px, 10px)
+}
+
+.usa-flag {
+	width: 100px;
+	height: 100%;
+	right: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+}
+
+.usa-flag img {
+	max-width: 25px;
+	margin-right: 5px;
+	margin-left:5px;
+	width: 100%;
+	height: 50%;
+}
+
+.usa-flag span {
+	font-size: 10px;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
 }

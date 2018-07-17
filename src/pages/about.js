@@ -10,28 +10,37 @@ const About = () => (
       <div className="container">
         <div className="columns">
           <div className="column">
-            <h1>Our Vision</h1>
-            <p>To improve every facet of business with coding solutions by integrating the latest technologies into our solutions.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section className="section">
-      <div className="container">
-        <div className="columns">
-          <div className="column">
-            <h1>Our Mission</h1>
-            <p>To Code; Yes, it's that simple.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section className="section">
-      <div className="container">
-        <div className="columns">
-          <div className="column">
-            <h1>Who We Are</h1>
-            <p>NextGen Code Company is comprised of highly skilled technology geeks. Besides regular Taco Tuesday outings, the NextGen team is usually found grinding away at the current project at hand. With unmatched work ethic and technical abilities it is hard to compete with such a team. The company was founded by two Texas Tech University Graduates who maintained succesful freelancing careers prior to NextGen. After working on several projects together the two decided to take their unique approach to business solutions to the next level. The current team is now able to produce big business solutions at small business prices without sacrificing quality. The company focuses on perfecting their own inner operations allowing them to develop software more efficiently than industry peers. NextGen is an industry leader by bringing in a new age of code solutions to several markets. With a heavy emphasis on good looks, good bones, quick production, and high performance, NextGen Code Company's software solutions have always more than satisfied clients. NextGen's intention is to build long-lasting relationships with big, medium, small, and new businesses to help them stay ahead of the competition.</p>
+            <h1>About us</h1>
+						<p>&quot;We help our partners leverage technology to improve business&quot;</p>
+						<p>
+							NextGen Code Company was founded in Lubbock Texas by a group of experienced freelance coders.
+							After years of building relationships within the tech community, the founding team decided to combine
+							their talents and join forces to create NextGen. NextGen’s team has now expanded and grown into an
+							efficient and highly productive workforce that can provide solutions most businesses can only dream up.
+							With a heavy focus on technology related consulting the team doesn’t just understand the code, they
+							understand the problems that they are solving.
+							NextGen has four core founding members. These members all come from different backgrounds and
+							educations which makes the team exceptionally powerful. By combining all their different styles of
+							thinking, they are able to unfold the most powerful solutions possible. Acting as a think tank, the team is
+							able to develop uniquely creative solutions inspiring NextGen to reach outside of the box. Aided by the
+							unbreakable team chemistry and unmatched trust, the team is incredibly capable of providing long-term
+							solutions for a better world.
+							NextGen has taken on several complex projects for their partners, ranging from graphic design,
+							websites, web/mobile apps, UI/UX design, internal business solutions and many more. Combining
+							technology and experience, NextGen believes any dream a partner has can be turned it into reality with
+							the right knowledge and code. The founding members have managed several of their own businesses
+							with success in the past, but they created NextGen to share those discovered solutions from past
+							experiences with all current and future partners. NextGen has the educational and professional
+							qualifications to critically analyze your “wants” and “whys” to produce the absolute best product that
+							you desire.
+							NextGen labels success from producing products like no other. They pride themselves on leaving no
+							stone unturned and perfecting the small overlooked details to overwhelm their partners with pure
+							excellence. NextGen labels success from the relationships they build with their partners. NextGen aims
+							to have their partners walk away from a presentation knowing that they have chosen the right trusted
+							team to help them build their dream into a reality. NextGen labels success by the value their partners
+							receive once the services or products are integrated in their business. Producing and deploying the right
+							product or service properly to their partners for maximum return is NextGen’s goal.
+						</p>
           </div>
         </div>
       </div>

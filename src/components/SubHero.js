@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from './Link'
 
 class SubHero extends Component {
   render() {
@@ -8,7 +9,10 @@ class SubHero extends Component {
           <div className="columns">
 
             <div className="column">
-              <h1 className="hero-title">{this.props.title}</h1>
+							<span className="home-breadcrumb"><Link to="/">Home</Link></span>
+							<h1 className="hero-title">
+								{this.props.title}
+							</h1>
               <h2 className="subhero-subtitle">{this.props.subtitle}</h2>
 
             </div>

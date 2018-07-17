@@ -4,18 +4,19 @@ import posed from 'react-pose'
 import { tween } from "popmotion";
 import { Link } from './Link'
 import Logo from './Logo'
+import Tango from '../assets/images/tango.png'
 
 const TopBar = posed.div({
   open: { 
     y: '0%', 
     staggerChildren: 150,
-    opacity: 1, 
+		opacity: 1,
     beforeChildren: true, 
     transition: tween
   },
   closed: { 
     y: '-100%',
-    opacity: 0,
+		opacity: 0,
 		transition: tween 
   },
 })
@@ -42,11 +43,22 @@ const NavItem = posed.li({
 
 const MobileLogo = posed.div({
   open: {
-    opacity: 1
+		opacity: 1,
   },
   closed: {
-    opacity: 0
+		opacity: 0,
   }
+})
+
+const TangoMenu = posed.div({
+	open: {
+		opacity: 1,
+		x: '0px'
+	},
+	closed: {
+		opacity: 0,
+		x: '100px'
+	}
 })
 
 const NavDesktop = ({ isOpen, navItems, onClick }) => (
@@ -54,14 +66,37 @@ const NavDesktop = ({ isOpen, navItems, onClick }) => (
   <div className="content">
     <div className="container-prLink">
     <ul className="page-home">
-      {navItems.map(({ url, name }) => (
-        <NavItem key={name}>
-          <Link to={url}>{name}</Link>
+      {navItems.map(({ url, name, menu_class }) => (
+				<NavItem className={`${menu_class}`} key={name}>
+          <Link className="ng-menu-link" to={url}>{name}</Link>
         </NavItem>
-      ))}
+			))}
+			<TangoMenu className='ng-tango-menu'>
+				<div className='ng-tango-bubbles-home ng-tango-bubble'>
+					Hello
+				</div>
+				<div className='ng-tango-bubbles-contact ng-tango-bubble'>
+					My team loves meeting new people
+				</div>
+				<div className='ng-tango-bubbles-services ng-tango-bubble'>
+					See the capabilities of my team
+				</div>
+				<div className='ng-tango-bubbles-about ng-tango-bubble'>
+					Learn about me and my team
+				</div>
+				<div className='ng-tango-bubbles-projects ng-tango-bubble'>
+					See what me and my team have done
+				</div>
+				<div className='ng-bubble-small'></div>
+				<div className='ng-bubble-medium'></div>
+
+				<div className='ng-bubble-small-alt1'></div>
+				<div className='ng-bubble-medium-alt1'></div>
+				<img alt="tango" src={Tango} />
+			</TangoMenu>
     </ul>
     </div>
-  </div>
+  	</div>
   </TopBar>
 )
 
@@ -82,15 +117,16 @@ const NavMobile = ({ isOpen, navItems, onClick }) => (
           ))}
         </ul>
       </div>
+			
     </div>
   </MobileTopBar>
 )
 
 const navLinks = [
-  { url: '/', name: 'Home' },
-  { url: '/about/', name: 'About' },
-  { url: '/projects/', name: 'Projects' },
-  { url: '/contact/', name: 'Contact' },
+  { url: '/', name: 'Home', menu_class: 'ng-menu-link-home' },
+  { url: '/about/', name: 'About', menu_class: 'ng-menu-link-about' },
+  { url: '/projects/', name: 'Projects', menu_class: 'ng-menu-link-projects' },
+  { url: '/contact/', name: 'Contact', menu_class: 'ng-menu-link-contact' },
 ];
 
 class Nav extends Component {
@@ -164,12 +200,12 @@ class Nav extends Component {
               MENU
             </div>
 
-            <div className="action">
-              <div className="bar"></div>
-              <div className="bar"></div>
-            </div>
+						<div className="bar"></div>
+						<div className="bar"></div>
           </div>
         </div>
+        
+				
 
         <div id="nav-btn-mobile" onClick={handleMobileNav} className={navButtonStyles}>
           <div className="content">

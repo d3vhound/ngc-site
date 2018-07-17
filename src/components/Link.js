@@ -11,7 +11,7 @@ const Link = ({ children, to, ...other }) => {
     else {
       console.log('Not same page')
       return false
-    }
+		}
   }
 
   return (
@@ -21,8 +21,8 @@ const Link = ({ children, to, ...other }) => {
         e => {
           if (isSamePage(to) === true) {
             e.preventDefault()
-          }
-        }
+					}
+				}
       } 
         {...other}
       >

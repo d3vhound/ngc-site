@@ -233,3 +233,14 @@ canvas {
 .ng-container-two {
   transition-delay: 1000ms!important;
 }
+
+.home-breadcrumb a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.home-breadcrumb {
+	font-size: 1rem;
+	padding-left: 10px;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}

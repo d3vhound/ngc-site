@@ -20,7 +20,7 @@ const ProjectSections = ({ node }) => {
     <Parallax
       className="column image-column"
       offsetYMax={40}
-      offsetYMin={-20}
+      offsetYMin={0}
      
     >
         <Img imgStyle={{ objectFit: 'contain' }} backgroundColor={'#f1f1f1'} className="project-image" sizes={node.mockup.sizes} alt={node.title + " project image"} />
@@ -34,7 +34,10 @@ const IndexPage = ({data}) => (
     <MainHero title="NextGen Code Company" subtitle="We are a software development agency that specializes in developing cost-effective apps for small businesses around the world."/>
     <InfoSection />
     
-      {data.allContentfulProject.edges.map((edge) => <ProjectSections key={edge.node.title} node={edge.node} />)}
+			{data.allContentfulProject.edges.map((edge) => <ProjectSections key={edge.node.title} node={edge.node} />)}
+			<div className="project-button-wrapper">
+				<Button to="/projects" color="dark" text="View More Projects"/>
+			</div>
   </Layout>
 )
 
