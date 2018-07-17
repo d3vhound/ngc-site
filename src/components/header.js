@@ -9,8 +9,6 @@ const Header = ({ siteTitle }) => {
 			<div className="ng-version-badge">
 				v2
 			</div>
-		
-		Devion
 		</div>
   )
 }
