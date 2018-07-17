@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import Button from '../components/Button'
 import { graphql } from 'gatsby'
 import ProjectList from '../components/ProjectList'
-import { Parallax } from 'react-scroll-parallax';
+// import { Parallax } from 'react-scroll-parallax';
 import Img from 'gatsby-image';
 
 const ProjectSections = ({ node }) => {
@@ -22,8 +22,10 @@ const ProjectSections = ({ node }) => {
       offsetYMax={40}
       offsetYMin={0}
      
-    > */}
+		> */}
+		<div className="column image-column">
         <Img imgStyle={{ objectFit: 'contain' }} backgroundColor={'#f1f1f1'} className="project-image" sizes={node.mockup.sizes} alt={node.title + " project image"} />
+		</div>
     {/* </Parallax> */}
     </ProjectList>
   )

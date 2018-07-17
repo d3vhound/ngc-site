@@ -4,7 +4,7 @@ import SubHero from '../components/SubHero'
 import Layout from '../components/layout'
 import ProjectList from '../components/ProjectList'
 import Button from '../components/Button'
-import { Parallax } from 'react-scroll-parallax';
+// import { Parallax } from 'react-scroll-parallax';
 import Img from 'gatsby-image';
 
 const ProjectSections = ({ node }) => {
@@ -20,8 +20,10 @@ const ProjectSections = ({ node }) => {
         offsetYMax={-20}
         offsetYMin={10}
         slowerScrollRate
-      > */}
+			> */}
+			<div className="column image-column">
         <Img imgStyle={{ objectFit: 'contain' }} backgroundColor={'#f1f1f1'} className="project-image" sizes={node.mockup.sizes} alt={node.title + " project image"} />
+			</div>
       {/* </Parallax> */}
     </ProjectList>
   )

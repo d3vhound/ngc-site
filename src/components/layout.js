@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import { StaticQuery } from "gatsby"
 import Nav from './Nav'
-import { ParallaxProvider } from 'react-scroll-parallax';
+// import { ParallaxProvider } from 'react-scroll-parallax';
 import Header from './header'
 import Footerv2 from './Footerv2'
 import USASection from './USASection'
