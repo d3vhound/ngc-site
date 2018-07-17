@@ -1,3 +1,6 @@
+
+
+
 @keyframes headerProgressBar {
 	0% { transform: scaleY(1); opacity: 0;}
 	14% { transform: scaleY(1); opacity: 0;}
@@ -26,19 +29,11 @@
 	100% { transform: translateX(-50%) translateY(-50%) scale(1) rotate(20deg); opacity: 0;}
 }
 
-.hero-new {
-	background: #171717;
-}
-
-.hero-new div.container {
-	max-width: 1400px;
-}
-
 
 .ng-header-new {
 	background: #171717;
 	position: relative;
-	height: 100%;
+	height: 600px;
 	overflow: hidden;
 	width: 100%;
 	display: flex;
@@ -48,16 +43,7 @@
 	justify-content: space-between;
 }
 
-.ng-header-new img {
-	max-width: 100%;
-	display: inline-block;
-	max-height: 450px;
-}
-
 .ng-header-track-new {
-	margin-top: 15rem;
-	margin-bottom: 15rem;
-	padding: 5rem;
 	width: 1px;
 	height: 1px;
 }
@@ -76,8 +62,7 @@
 .ng-menu-progress-bar{
 	position: absolute;
 	bottom: 300px;
-	// left: 10px;
-	right: 10px;
+	left: 10px;
 	width: 1px;
 	height: 1px;
 	margin-right: 10px;
@@ -86,25 +71,6 @@
 	animation-timing-function: ease-in-out;
 }
 
-.header-badge {
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	right: 100px;
-	height: 100%;
-	visibility: hidden;
-}
-
-.header-badge .ng-version-badge {
-	margin: 0;
-}
-
-@media (min-width: 1000px) {
-	.header-badge {
-		visibility: visible;
-	}
-}
 
 .ng-menu-spacer-spot{
 	width: 1px;
@@ -142,12 +108,16 @@
 	height: 100%;
 }
 
-.ng-header-mobile-new img {
-	max-width: 200px;
+.ng-header-mobile-new {
+	img {
+		max-width: 200px !important;
+	}
 }
 
-.ng-header-web-new img {
-	max-width: 400px;
+.ng-header-web-new {
+	img {
+		max-width: 400px !important;
+	}
 }
 
 .item-5 {
@@ -168,19 +138,6 @@
 
 .ng-code-company-title {
 	white-space: nowrap;
-}
-
-.ng-header-item-title {
-	margin: 30px auto 20px;
-	font-family: 'IBM Plex Mono', monospace;
-	font-weight: 400;
-	font-size: 1.5rem;
-}
-
-.ng-header-item-subtitle {
-	font-family: 'IBM Plex Mono', monospace;
-	font-weight: 400;
-	font-size: .8rem;
 }
 
 @media only screen and (max-width: 1040px) {
@@ -229,8 +186,6 @@
 @media only screen and (max-width: 720px) {
 	.ng-header-new {
 		flex-direction: column;
-		padding-top: 100px;
-		height: 100%;
 	}
 	.ng-header-title-new{
 		padding-left: 0px;
@@ -245,11 +200,15 @@
 	.ng-header-item-new {
 		transform-origin: 50% 2600px;
 	}
-	.ng-header-mobile img {
-		max-width: 150px;
+	.ng-header-mobile-new{
+		 img {
+			max-width: 150px;
+		}
 	}
-	.ng-header-web img {
-		max-width: 300px;
+	.ng-header-web-new{
+		 img {
+			max-width: 300px;
+		}
 	}
 
 	.ng-menu-progress-bar{
@@ -260,4 +219,40 @@
 		animation: 5s infinite headerProgressBarY;
 		animation-timing-function: ease-in-out;
 	}
+}
+
+.ng-header-item-title{
+	font-size: 24px;
+	font-weight: 700;
+	margin-top: 15px;
+	letter-spacing: 2px;
+}
+
+.ng-header-item-subtitle{
+	letter-spacing: 2px;
+	opacity: .8;
+	font-size: 10px;
+	margin-top: 5px;
+}
+
+
+
+
+.ng-version-header-container{
+	position: absolute;
+	background: none;
+	top: 20px;
+	right: 20px;
+	z-index: 1000;
+}
+
+@media only screen and (max-width: 1200px) {
+	.ng-version-header-container{
+		left: 20px;
+	}
+}
+
+
+.ng-bold-700{
+	font-weight: 700;
 }
