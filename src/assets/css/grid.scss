@@ -126,6 +126,7 @@
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
+	position: relative;
 	h1 {
 		margin: 0px;
 	}
@@ -141,6 +142,18 @@
 .ng-subhero-spacer{
 	width: 100px;
 	height: 1px;
+}
+
+.ng-subhero-logo{
+	position: absolute;
+	left: 50%;
+	top: 20px;
+	transform: translateX(-50%);
+	width: 36px;
+	.ng-logo-with-blocks{
+		width: 36px;
+		overflow: visible;
+	}
 }
 
 
