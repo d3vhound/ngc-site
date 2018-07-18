@@ -94,11 +94,11 @@ const Contact = () => (
 							<label class="label">Best way to contact you?</label>
 						<div class="control">
 							<label class="radio">
-								<input type="radio" name="question" value="phone" />
+								<input type="radio" name="Best way to contact" value="phone" />
 								Phone
 							</label>
 							<label class="radio">
-								<input type="radio" name="question" value="email"/>
+								<input type="radio" name="Best way to contact" value="email"/>
 								Email
 							</label>
 						</div>
