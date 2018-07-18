@@ -1,0 +1,38 @@
+.mr-pink img {
+	width: 100%;
+}
+
+.mr-pink-col-1 {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.step-section {
+	margin-top: 8rem;
+}
+
+.black-container {
+	background: #1b1b1b;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 3rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.black-container .step-img {
+	width: 100%;
+	padding-left: 5rem;
+	padding-right: 5rem;
+	margin-top: -7rem;
+}
+
+@media (max-width: 800px) {
+	.black-container .step-img {
+		padding-left: 2rem;
+		padding-right: 2rem;
+		margin-top: -5rem;
+	}
+}

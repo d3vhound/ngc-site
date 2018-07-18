@@ -144,6 +144,14 @@ body {
 	}
 }
 
+#nav-btn.active .text {
+	color: #1b1b1b;
+}
+
+#nav-btn.active .ng-menu-button-lg:after {
+	background: #1b1b1b;
+}
+
 #nav-btn .content .action {
   height: 27px;
   width: 100%;

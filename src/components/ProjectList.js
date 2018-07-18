@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import WaypointWrapper from './WaypointWrapper'
-import Img from 'gatsby-image';
+// import Img from 'gatsby-image';
 
 class ProjectList extends Component {
   render() {

@@ -5,11 +5,11 @@ import { tween } from "popmotion";
 import { Link } from './Link'
 import Logo from './Logo'
 import Tango from '../assets/images/tango.png'
-import Facebook from '../assets/images/logo-facebook.svg'
-import Twitter from '../assets/images/logo-twitter.svg'
-import Linkedin from '../assets/images/logo-linkedin.svg'
-import Pinterest from '../assets/images/logo-pinterest.svg'
-import Instagram from '../assets/images/logo-instagram.svg'
+// import Facebook from '../assets/images/logo-facebook.svg'
+// import Twitter from '../assets/images/logo-twitter.svg'
+// import Linkedin from '../assets/images/logo-linkedin.svg'
+// import Pinterest from '../assets/images/logo-pinterest.svg'
+// import Instagram from '../assets/images/logo-instagram.svg'
 import Facebook2 from '../assets/images/facebook_social_icon.svg'
 import Twitter2 from '../assets/images/twitter_social_icon.svg'
 import Linkedin2 from '../assets/images/linked_in_social_icon.svg'
@@ -240,10 +240,15 @@ class Nav extends Component {
       <React.Fragment>
 
         <div id="nav-btn" onClick={handleNavClick} className={navButtonStyles}>
-            <div className="text ng-menu-button-lg">
+            {/* <div className="text ng-menu-button-lg">
               MENU
-            </div>
-
+						</div> */}
+						<div className="content">
+							<div className="action">
+								<div className="bar"></div>
+								<div className="bar"></div>
+							</div>
+						</div>
         </div>
 
 
