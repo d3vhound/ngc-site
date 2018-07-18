@@ -42,7 +42,7 @@
 }
 
 .subhero {
-  background: #000;
+  background: #171717;
   color: #fff;
   padding-top: 9.5rem;
   padding-bottom: 6.5rem;
@@ -51,6 +51,8 @@
 @media (max-width: 767px) {
   .subhero {
     padding-bottom: 3.5rem;
+		padding-left: 10px;
+		padding-right: 10px;
   }
 }
 
@@ -115,4 +117,44 @@
   .footer {
     // height: 510px;
   }
+}
+
+
+
+.ng-sub-hero-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	h1 {
+		margin: 0px;
+	}
+	h2 {
+		margin: 0px;
+		letter-spacing: 2px;
+		opacity: .8;
+		font-size: 12px;
+		font-family: 'Open Sans', sans-serif;
+	}
+}
+
+.ng-subhero-spacer{
+	width: 100px;
+	height: 1px;
+}
+
+
+@media (max-width: 600px) {
+  .ng-sub-hero-container{
+    flex-direction: column;
+  }
+	.home-breadcrumb{
+		display: none;
+	}
+	.ng-subhero-spacer{
+		display: none;
+	}
+	.subhero {
+		padding-top: 6.5rem;
+	}
 }

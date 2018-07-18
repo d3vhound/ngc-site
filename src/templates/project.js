@@ -6,11 +6,11 @@ import Layout from '../components/layout'
 
 class Project extends Component {
   render() {
-    const { title, content, mockup, logo, mockup2 } = this.props.data.contentfulProject
+    const { title, type, content, mockup, logo, mockup2 } = this.props.data.contentfulProject
 
     return (
       <Layout>
-        <SubHero title={title} subtitle="" classes/>
+        <SubHero title={title} subtitle={type} classes/>
         <section className="section">
           <div className="container">
             <div className="columns is-desktop">
@@ -52,6 +52,7 @@ export const pageQuery = graphql`
   query projectQuery($slug: String!) {
     contentfulProject(slug: {eq: $slug}) {
       title
+			type
       slug
       logo {
         resolutions(width: 500) {
