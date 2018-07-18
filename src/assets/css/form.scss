@@ -1,0 +1,26 @@
+.checkboxes {
+	display: flex;
+	flex-direction: column;
+
+	.checkbox {
+		margin: 5px 0;
+
+		input {
+			margin-right: 5px;
+		}
+	}
+}
+
+.radio input {
+	margin-right: 5px;
+}
+
+.input {
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.project-discovery-form {
+	max-width: 450px;
+	margin: 0 auto;
+}

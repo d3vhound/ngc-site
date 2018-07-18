@@ -6,28 +6,27 @@ import Layout from '../components/layout'
 import Button from '../components/Button'
 import { graphql } from 'gatsby'
 import ProjectList from '../components/ProjectList'
-// import { Parallax } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax';
 import Img from 'gatsby-image';
 
 const ProjectSections = ({ node }) => {
   return (
-		// <ProjectList backgroundImage={node.backgroundImage.resolutions.src}>
-		<ProjectList>
+		<ProjectList backgroundImg={node.backgroundImage.sizes}>>
     <div className="column center-content is-one-third">
       <h1 className="project-title">{node.title}</h1>
       <h2 className="project-type">{node.type || "Project Type"}</h2>
       <Button to={'/projects/' + node.slug} color="dark" text="More info"/>
     </div>
-    {/* <Parallax
+    <Parallax
       className="column image-column"
       offsetYMax={40}
       offsetYMin={0}
      
-		> */}
+		>
 		<div className="column image-column">
         <Img imgStyle={{ objectFit: 'contain' }} backgroundColor={'transparent'} className="project-image" sizes={node.mockup.sizes} alt={node.title + " project image"} />
 		</div>
-    {/* </Parallax> */}
+    </Parallax>
     </ProjectList>
   )
 }

@@ -6,28 +6,28 @@
 
  // You can delete this file if you're not using it
 
-// import createHistory from "history/createBrowserHistory"
+import createHistory from "history/createBrowserHistory"
 
-// const timeout = 800
-// const historyExitingEventType = `history::exiting`
-// const historyEnteringEventType = `history::entering`
+const timeout = 800
+const historyExitingEventType = `history::exiting`
+const historyEnteringEventType = `history::entering`
 
-// const getUserConfirmation = (pathname, callback) => {
-//   const event = new CustomEvent(historyExitingEventType, { detail: { pathname } })
-//   window.dispatchEvent(event)
-//   setTimeout(() => {
-//     callback(true)
-//   }, timeout)
-// }
+const getUserConfirmation = (pathname, callback) => {
+  const event = new CustomEvent(historyExitingEventType, { detail: { pathname } })
+  window.dispatchEvent(event)
+  setTimeout(() => {
+    callback(true)
+  }, timeout)
+}
 
-// let history
-// if (typeof document !== 'undefined') {
-//   history = createHistory({ getUserConfirmation })
-//   // block must return a string to conform
-//   history.block((location, action) => location.pathname)
-// }
+let history
+if (typeof document !== 'undefined') {
+  history = createHistory({ getUserConfirmation })
+  // block must return a string to conform
+  history.block((location, action) => location.pathname)
+}
 
-// export let replaceHistory = () => history
+export let replaceHistory = () => history
 
 
-// export { historyExitingEventType, historyEnteringEventType, timeout, }
+export { historyExitingEventType, historyEnteringEventType, timeout, }

@@ -44,7 +44,7 @@ class InfoSection extends Component {
 				</div>
 			</div>
 			<div className="container has-text-centered">
-				<Button onClick={MixpanelTest} to="/story" color="dark" text="A Quick Story About What We Do" />
+				<Button onClick={MixpanelTest} to="/mr-pink-story" color="dark" text="A Quick Story About What We Do" />
 			</div>
 		</section>
 		)
