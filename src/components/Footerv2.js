@@ -4,6 +4,11 @@ import Linkedin from '../assets/images/logo-linkedin.svg'
 import Twitter from '../assets/images/logo-twitter.svg'
 import Instagram from '../assets/images/logo-instagram.svg'
 import Pinterest from '../assets/images/logo-pinterest.svg'
+import Facebook2 from '../assets/images/facebook_social_icon_white.svg'
+import Twitter2 from '../assets/images/twitter_social_icon_white.svg'
+import Linkedin2 from '../assets/images/linked_in_social_icon_white.svg'
+import Pinterest2 from '../assets/images/pinterest_social_icon_white.svg'
+import Instagram2 from '../assets/images/instagram_social_icon_white.svg'
 
 export default () => (
 	<div className='ng-footer-container'>
@@ -17,19 +22,19 @@ export default () => (
 	<div className="ng-footer-inner">
 		<div className="ng-footer-box ng-footer-left-box">
 				<a href="https://www.facebook.com/NextGenCodeCompany/" target="_blank" rel="noopener noreferrer" className="ng-footer-social-icon">
-				<img src={Facebook} alt="social icon"/>
+					<img src={Facebook2} alt="social icon"/>
 				</a>
 				<a href="https://twitter.com/NextGenCodeCo" target="_blank" rel="noopener noreferrer" className="ng-footer-social-icon">
-					<img src={Twitter} alt="social icon"/>
+					<img src={Twitter2} alt="social icon"/>
 				</a>
 					<a href="https://www.instagram.com/nextgencodeco/" target="_blank" rel="noopener noreferrer" className="ng-footer-social-icon">
-						<img src={Instagram} alt="social icon"/>
+						<img src={Instagram2} alt="social icon"/>
 				</a>
 				<a href="https://www.pinterest.com/nextgencodecompany/" target="_blank" rel="noopener noreferrer" className="ng-footer-social-icon">
-							<img src={Pinterest} alt="social icon"/>
+							<img src={Pinterest2} alt="social icon"/>
 						</a>
 				<a href="https://www.linkedin.com/company/nextgen-code-company" target="_blank" rel="noopener noreferrer" className="ng-footer-social-icon">
-								<img src={Linkedin} alt="social icon"/>
+								<img src={Linkedin2} alt="social icon"/>
 							</a>
 								<br />
 									<br />

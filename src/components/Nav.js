@@ -123,22 +123,21 @@ const NavDesktop = ({ isOpen, navItems, onClick }) => (
 				<img alt="tango" src={Tango} />
 			</TangoMenu>
 			<SocialLinks className="social-links">
-				<div>
-					<img alt="Facebook" src={Facebook2} />
-				</div>
-				<div>
-					<img alt="Twitter" src={Twitter2} />
-				</div>
-				<div>
-					<img alt="Pinterest" src={Pinterest2} />
-				</div>
-				<div>
-					<img alt="Linkedin" src={Linkedin2} />
-				</div>
-
-				<div>
-					<img alt="Instagram" src={Instagram2} />
-				</div>
+				<a href="https://www.facebook.com/NextGenCodeCompany/" target="_blank" rel="noopener noreferrer">
+					<img src={Facebook2} alt="NextGen facebook"/>
+				</a>
+				<a href="https://twitter.com/NextGenCodeCo" target="_blank" rel="noopener noreferrer">
+					<img src={Twitter2} alt="NextGen twitter"/>
+				</a>
+					<a href="https://www.instagram.com/nextgencodeco/" target="_blank" rel="noopener noreferrer">
+						<img src={Instagram2} alt="NextGen instagram"/>
+				</a>
+				<a href="https://www.pinterest.com/nextgencodecompany/" target="_blank" rel="noopener noreferrer">
+					<img src={Pinterest2} alt="NextGen pinterest"/>
+				</a>
+				<a href="https://www.linkedin.com/company/nextgen-code-company" target="_blank" rel="noopener noreferrer">
+					<img src={Linkedin2} alt="NextGen linkedin"/>
+				</a>
 			</SocialLinks>
     </ul>
     </div>

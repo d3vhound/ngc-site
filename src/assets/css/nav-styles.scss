@@ -438,20 +438,27 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.social-links div {
+.social-links a {
 	z-index: 1000;
 	display: block;
-	padding: 5px;
+	padding: 8px;
 	text-align: center;
 	img {
-		max-width: 30px;
-		max-height: 30px;
+		max-width: 20px;
+		max-height: 20px;
 	}
+	transition: all .1s ease;
+	transform: scale(1);
+}
+
+
+.social-links a:hover {
+	transform: scale(1.3);
 }
 
 .social-links {
 	position: absolute;
-	left: 10px;
+	left: 20px;
 	bottom: 25%;
 	display: flex;
 	flex-direction: column;
