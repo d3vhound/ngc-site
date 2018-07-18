@@ -11,7 +11,7 @@ import Img from 'gatsby-image';
 
 const ProjectSections = ({ node }) => {
   return (
-		<ProjectList backgroundImg={node.backgroundImage.sizes}>>
+		<ProjectList backgroundImg={node.backgroundImage.sizes}>
     <div className="column center-content is-one-third">
       <h1 className="project-title">{node.title}</h1>
       <h2 className="project-type">{node.type || "Project Type"}</h2>
