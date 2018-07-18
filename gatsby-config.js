@@ -37,13 +37,22 @@ module.exports = {
       },
 		},
 		{
-			resolve: 'gatsby-plugin-mixpanel',
-			options: {
-				apiToken: 'bcaca80510d095ba6acc1f7e6d09d3a1',
-				debug: true,
-				enableOnDevMode: true,
-				pageViews: null
-			},
-		},  
+    resolve: `gatsby-plugin-favicon`,
+    options: {
+      logo: "./assets/images/favicon.png",
+      injectHTML: true,
+      icons: {
+        android: true,
+        appleIcon: true,
+        appleStartup: true,
+        coast: false,
+        favicons: true,
+        firefox: true,
+        twitter: false,
+        yandex: false,
+        windows: false
+      }
+    }
+  },
   ],
 }
