@@ -8,7 +8,7 @@
 
 import createHistory from "history/createBrowserHistory"
 
-const timeout = 800
+const timeout = 1000
 const historyExitingEventType = `history::exiting`
 const historyEnteringEventType = `history::entering`
 
