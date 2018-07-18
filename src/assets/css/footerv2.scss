@@ -1,10 +1,24 @@
+.ng-footer-container{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.ng-contact-button-container{
+	display: flex;
+	height: 450px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
 .ng-footer{
 	// margin-top: 150px;
 	width: 100%;
-	background: #4C4C4C;
+	background: #171717;
 	position: relative;
 	padding-top: 40px;
-	font-family: 'Open Sans', sans-serif;
+	padding-bottom: 40px;
 	text-align: center;
 }
 
@@ -28,7 +42,7 @@
 	border-bottom-left-radius: 10px 5px 20px;
 	border-top-right-radius: 10px 5px 20px;
 	border-bottom-right-radius: 10px 5px 20px;
-	background: #4C4C4C;
+	background: #171717;
 	display: inline-block;
 	transition: all .2s ease;
 	opacity: .4;
@@ -48,10 +62,7 @@
 }
 
 .ng-footer-contact-button{
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateY(-50%) translateX(-50%);
+	position: relative;
 	background: #000;
 	padding: 22px 25px;
 	color: #fff;
@@ -63,11 +74,24 @@
 	font-size: 18px;
 	transition: all .2s ease;
 	text-decoration: none;
+	transform-origin: center;
+	display: inline-block;
 }
 
 .ng-footer-contact-button:hover {
-	transform: scale(1.06) translateY(-51%) translateX(-47%);
+	transform: scale(1.06);
 	box-shadow: 0px 8px 30px rgba(0,0,0,.5);
+}
+
+
+
+@media only screen and (max-width: 550px) {
+	.ng-footer-contact-button{
+		font-size: 14px;
+	}
+
+	.ng-footer-contact-button:hover {
+	}
 }
 
 .ng-footer-box{
@@ -367,9 +391,10 @@
     width: 100%;
     text-align: center;
     padding: 40px;
-    padding-bottom: 180px;
+		margin: auto;
+		padding-bottom: 420px;
+    margin-bottom: -450px;
     box-sizing: border-box;
-    margin: auto;
     background: linear-gradient(#ffffff, #e3e3e3);
 }
 
@@ -411,7 +436,6 @@
     }
     .ng-made-in-america-container{
         padding: 15px;
-        padding-bottom: 140px;
     }
 }
 

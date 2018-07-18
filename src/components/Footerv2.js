@@ -6,11 +6,14 @@ import Instagram from '../assets/images/logo-instagram.svg'
 import Pinterest from '../assets/images/logo-pinterest.svg'
 
 export default () => (
-
-	<div className="ng-footer footer">
+	<div className='ng-footer-container'>
+	<div className='ng-contact-button-container'>
 	<a href="/drift" className="ng-footer-contact-button">
 		CLICK HERE TO CHAT WITH US
-		</a>
+	</a>
+	</div>
+	<div className="ng-footer footer">
+
 	<div className="ng-footer-inner">
 		<div className="ng-footer-box ng-footer-left-box">
 				<a href="https://www.facebook.com/NextGenCodeCompany/" target="_blank" rel="noopener noreferrer" className="ng-footer-social-icon">
@@ -49,4 +52,5 @@ export default () => (
 										v2
 									</div>
 							</div>
+						</div>
 )
