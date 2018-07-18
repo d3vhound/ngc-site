@@ -47,7 +47,7 @@ const About = () => (
 				</div>
 				<div className='ng-about-page-container-right'>
 					<div className='ng-about-page-tango-container'>
-						<img src={Tango} />
+						<img alt="next gen tango" src={Tango} />
 					</div>
 					<div className='ng-about-page-social-container'>
 
@@ -56,7 +56,7 @@ const About = () => (
 			</div>
 			<div className='ng-tango-box-container'>
 				<div className='ng-about-page-tango-small'>
-					<img src={Tango} />
+					<img alt="next gen tango" src={Tango} />
 				</div>
 				<h3>GREETINGS, I'm Tango</h3>
 				<p>

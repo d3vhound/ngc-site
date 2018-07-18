@@ -1,12 +1,7 @@
 import React from 'react'
 import SubHero from '../components/SubHero'
-import Facebook from '../assets/images/logo-facebook.svg'
-import Linkedin from '../assets/images/logo-linkedin.svg'
-import Twitter from '../assets/images/logo-twitter.svg'
-import Instagram from '../assets/images/logo-instagram.svg'
 
 import Layout from '../components/layout'
-import Button from '../components/Button';
 
 const Contact = () => (
 	<Layout>
