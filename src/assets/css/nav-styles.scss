@@ -497,3 +497,10 @@ body {
 	transform-origin: left;
 	transform: scaleX(20);
 }
+
+.ng-menu-version-container{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	opacity: .7;
+}
