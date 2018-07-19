@@ -1,15 +1,9 @@
 import React, { Component } from 'react';
 import Button from '../components/Button';
-import PropTypes from 'prop-types'
 
 class InfoSection extends Component {
 
 	render() {
-
-		const MixpanelTest = () => {
-			console.log('Test')
-			this.context.mixpanel.track('Test')
-		}
 
 		return (
 		<section className="section info-section">
@@ -44,15 +38,11 @@ class InfoSection extends Component {
 				</div>
 			</div>
 			<div className="container has-text-centered">
-				<Button onClick={MixpanelTest} to="/mr-pink-story" color="dark" text="A Quick Story About What We Do" />
+				<Button to="/mr-pink-story" color="dark" text="A Quick Story About What We Do" />
 			</div>
 		</section>
 		)
 	}
-}
-
-InfoSection.contextTypes = {
-	mixpanel: PropTypes.object.isRequired
 }
 
 export default InfoSection
