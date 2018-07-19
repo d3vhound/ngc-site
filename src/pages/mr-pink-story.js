@@ -166,7 +166,8 @@ const MrPink = () => (
 			<div className="container has-text-centered">
 				<h1>And that's what we do.</h1>
 				<p><i>We partner with you so you can be like Mr. Pink and succeed even when it might seem impossible.</i></p>
-				<Button text="See real case studies" color="dark"/>
+					{/*<Button text="See real case studies" color="dark"/>*/}
+					<Button to="/project-discovery" text="Let's start a project together" color="dark"/>
 			</div>
 		</section>
 		<section className="section step-section">

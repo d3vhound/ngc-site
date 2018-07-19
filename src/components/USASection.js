@@ -9,7 +9,7 @@ export default () => (
 		<div className='ng-made-in-america'>
 			Proudly Coded In America
         </div>
-		<div className='ng-made-in-america-line'>
+		<div className='ng-made-in-america-line ng-made-in-america-line-bottom'>
 		</div>
 	</div>
 )

@@ -153,7 +153,7 @@ const NavDesktop = ({ isOpen, navItems, onClick }) => (
 const NavMobile = ({ isOpen, navItems, onClick }) => (
   <MobileTopBar id="nav-mobile" pose={isOpen ? 'open' : 'closed'}>
     <div className="head">
-      <Link to="/" className="container-logo">
+      <Link to="/" className="container-logo static-logo">
         <Logo />
       </Link>
     </div>
@@ -176,7 +176,7 @@ const navLinks = [
   { url: '/', name: 'Home', menu_class: 'ng-menu-link-home' },
   { url: '/about/', name: 'About', menu_class: 'ng-menu-link-about' },
   { url: '/projects/', name: 'Projects', menu_class: 'ng-menu-link-projects' },
-  { url: '/contact/', name: 'Contact', menu_class: 'ng-menu-link-contact' },
+  { url: '/project-discovery/', name: "Let's start a project", menu_class: 'ng-menu-link-contact' },
 ];
 
 class Nav extends Component {

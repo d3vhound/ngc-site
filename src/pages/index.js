@@ -8,6 +8,7 @@ import { graphql } from 'gatsby'
 import ProjectList from '../components/ProjectList'
 import { Parallax } from 'react-scroll-parallax';
 import Img from 'gatsby-image';
+import USASection from '../components/USASection'
 
 const ProjectSections = ({ node }) => {
   return (
@@ -21,7 +22,7 @@ const ProjectSections = ({ node }) => {
       className="column image-column"
       offsetYMax={40}
       offsetYMin={0}
-     
+
 		>
 		<div className="column image-column">
         <Img imgStyle={{ objectFit: 'contain' }} backgroundColor={'transparent'} className="project-image" sizes={node.mockup.sizes} alt={node.title + " project image"} />
@@ -35,11 +36,12 @@ const IndexPage = ({data}) => (
   <Layout>
     <Hero />
     <InfoSection />
-    
+
 			{data.allContentfulProject.edges.map((edge) => <ProjectSections key={edge.node.title} node={edge.node} />)}
 			<div className="project-button-wrapper">
 				<Button to="/projects" color="dark" text="View More Projects"/>
 			</div>
+			<USASection />
   </Layout>
 )
 

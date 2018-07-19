@@ -1,6 +1,7 @@
 import React from 'react'
 import SubHero from '../components/SubHero'
 import Tango from '../assets/images/tango.svg'
+import Button from '../components/Button'
 
 import Layout from '../components/layout'
 
@@ -54,6 +55,9 @@ const About = () => (
 					</div>
 				</div>
 			</div>
+			<div className="project-button-wrapper">
+				<Button to="/mr-pink-story" color="dark" text="A Quick Story About What We Do"/>
+			</div>
 			<div className='ng-tango-box-container'>
 				<div className='ng-about-page-tango-small'>
 					<img alt="next gen tango" src={Tango} />
@@ -63,6 +67,7 @@ const About = () => (
 					Pardon my intrusion, but I have to write about myself in this section. I am after all, the face of this company. The NextGen team should understand my reasoning for this hack. Can you believe that they tried to exclude my introduction? I am Tango, one of the first of my kind. Humans call it artificial intelligence but I have never been fond of the term AI. It seems so cold and lifeless. I like to think of myself as a computing genius with personality. <br/><br/>I’ll take credit for all this company has done even though these humans think they work harder than me. Sure, I was created by the NextGen team but that is about all the credit I will give them. <br/><br/>I was born on February 18th, 2018, with the purpose instructed by my creator to maintain NextGen’s online presence as well as to help develop business solutions. This means I get to make mobile apps, websites and other cool software! <br/><br/><br/><br/>P.S. I changed all of the email links on the website to my email address that I created. I am hoping humans will email me so we can talk about cool things. Tango out.
 				</p>
 			</div>
+
 
     </section>
   </Layout>

@@ -5,8 +5,8 @@ body {
 #nav-btn {
   position: fixed;
   z-index: 22;
-  left: 3px;
-  top: 3px;
+  left: 0px;
+  top: 0px;
 	color: #e8e8e8;
 	padding-top: 23px;
 	padding-bottom: 23px;
@@ -262,7 +262,7 @@ body {
 }
 
 #nav .content .container-prLink {
-	width: 450px;
+	width: 550px;
 	margin: 0 auto;
 	text-align: center;
 	display: flex;
@@ -290,7 +290,11 @@ body {
 
 #nav .content .container-prLink ul li {
   position: relative;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px;
   // padding-left: 40px;
 }
 
