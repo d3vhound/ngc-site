@@ -2,14 +2,14 @@ const getTransitionStyles = timeout => {
   return {
     exiting: {
       transform: 'translateX(0vw)',
-      transition: `all 500ms ease-out`,
+      transition: `all 300ms ease-out`,
     },
     exited: {
       transform: 'translateX(0vw)',
-      transition: `all 500ms ease-out`,
+      transition: `all 300ms ease-out`,
     },
     entering: {
-      transition: `all 500ms ease-out`,
+      transition: `all 300ms ease-out`,
       transform: 'translateX(-100vw)',
     },
     entered: {

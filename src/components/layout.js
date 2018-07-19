@@ -11,6 +11,10 @@ import USASection from './USASection'
 import '../assets/css/index.scss'
 import Transition from '../components/transition'
 import TransitionTwo from '../components/transition2'
+import Favicon from '../assets/images/favicon.ico'
+import Favicon_touch from '../assets/images/apple-touch-icon.png'
+import Favicon_touch2 from '../assets/images/apple-touch-icon-72x72.png'
+import Favicon_touch3 from '../assets/images/apple-touch-icon-114x114.png'
 
 
 const Layout = ({ children, data }) => (
@@ -38,10 +42,10 @@ const Layout = ({ children, data }) => (
           ]}
           >
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-				<link rel="shortcut icon" href="../assets/images/favicon.ico" />
-				<link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png" />
-				<link rel="apple-touch-icon" sizes="72x72" href="../assets/images/apple-touch-icon-72x72.png" />
-				<link rel="apple-touch-icon" sizes="114x114" href="../assets/images/apple-touch-icon-114x114.png" />
+				<link rel="shortcut icon" href={Favicon} />
+				<link rel="apple-touch-icon" href={Favicon_touch} />
+				<link rel="apple-touch-icon" sizes="72x72" href={Favicon_touch2} />
+				<link rel="apple-touch-icon" sizes="114x114" href={Favicon_touch3} />
         </Helmet>
         <Nav />
         <Header />

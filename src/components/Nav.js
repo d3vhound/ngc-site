@@ -51,14 +51,14 @@ const NavItem = posed.li({
   closed: { opacity: 0, y: '50%' }
 })
 
-const MobileLogo = posed.div({
-  open: {
-		opacity: 1,
-  },
-  closed: {
-		opacity: 0,
-  }
-})
+// const MobileLogo = posed.div({
+//   open: {
+// 		opacity: 1,
+//   },
+//   closed: {
+// 		opacity: 0,
+//   }
+// })
 
 const TangoMenu = posed.div({
 	open: {
