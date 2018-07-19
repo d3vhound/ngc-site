@@ -2,8 +2,8 @@ import React from 'react'
 // import MainHero from '../components/MainHero'
 import Hero from '../components/Hero'
 import InfoSection from '../components/InfoSection'
-import PartnersSection from '../components/PartnersSection'
-import TestimonalsSection from '../components/TestimonalsSection'
+// import PartnersSection from '../components/PartnersSection'
+// import TestimonalsSection from '../components/TestimonalsSection'
 import Layout from '../components/layout'
 import Button from '../components/Button'
 import { graphql } from 'gatsby'
@@ -36,14 +36,14 @@ const ProjectSections = ({ node }) => {
 const IndexPage = ({data}) => (
   <Layout>
     <Hero />
-		<PartnersSection />
+		{/* <PartnersSection /> */}
     <InfoSection />
     
 			{data.allContentfulProject.edges.map((edge) => <ProjectSections key={edge.node.title} node={edge.node} />)}
 			<div className="project-button-wrapper">
 				<Button to="/projects" color="dark" text="View More Projects"/>
 			</div>
-			<TestimonalsSection />
+			{/* <TestimonalsSection /> */}
   </Layout>
 )
 
