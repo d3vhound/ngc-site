@@ -144,6 +144,11 @@ body {
 	}
 }
 
+#nav-btn.active {
+	background-color: rgba(255, 255, 255, 0);
+	box-shadow: none;
+}
+
 #nav-btn.active .text {
 	color: #1b1b1b;
 }

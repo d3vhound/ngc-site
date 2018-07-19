@@ -245,15 +245,15 @@ class Nav extends Component {
       <React.Fragment>
 
         <div id="nav-btn" onClick={handleNavClick} className={navButtonStyles}>
-            {/* <div className="text ng-menu-button-lg">
+            <div className="text ng-menu-button-lg">
               MENU
-						</div> */}
-						<div className="content">
+						</div>
+						{/*<div className="content">
 							<div className="action">
 								<div className="bar"></div>
 								<div className="bar"></div>
 							</div>
-						</div>
+						</div> */}
         </div>
 
 

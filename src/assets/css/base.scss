@@ -202,7 +202,7 @@ canvas {
   left: 0;
   // transform: translateY(100vh);
   pointer-events: none;
-  background: #000;
+  background: #fbfbfb;
 }
 
 .overlay-container {
@@ -211,8 +211,24 @@ canvas {
 }
 
 .ng-two {
-  background: #4C4C4C;
+  background: #e7e7e7;
   z-index: 24;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.ng-transition-tango {
+		width: 70px;
+		position: relative;
+	}
+	.ng-tango-bubble{
+		bottom: 90px;
+		width: auto;
+		padding: 4px 13px;
+	}
+
+	img {
+		width: 100%;
+	}
 }
 
 .ng-three {

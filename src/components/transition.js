@@ -3,6 +3,7 @@ import { Transition as ReactTransition } from "react-transition-group"
 import getTransitionStyle from "../utils/getTransitionStyle"
 import getTransitionDelay from "../utils/getTransitionDelay"
 import { historyExitingEventType, timeout, } from "../../gatsby-browser"
+import Tango from '../assets/images/tango.svg'
 
 class Transition extends React.Component {
   constructor(props) {
@@ -57,7 +58,16 @@ class Transition extends React.Component {
               ...getTransitionDelay({ status, timeout }),
             }}
           >
-            <div className="base-overlay ng-two"></div>
+            <div className="base-overlay ng-two">
+							<div className='ng-transition-tango'>
+								<div className='ng-bubble-small'></div>
+								<div className='ng-bubble-medium'></div>
+								<div className='ng-tango-bubbles-home ng-tango-bubble'>
+									Hello
+								</div>
+								<img src={Tango} />
+							</div>
+						</div>
           </div>
           </>
         )}
