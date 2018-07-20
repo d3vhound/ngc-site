@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 // import Facebook from '../assets/images/logo-facebook.svg'
 // import Linkedin from '../assets/images/logo-linkedin.svg'
 // import Twitter from '../assets/images/logo-twitter.svg'
@@ -10,14 +10,11 @@ import Linkedin2 from '../assets/images/linked_in_social_icon_white.svg'
 import Pinterest2 from '../assets/images/pinterest_social_icon_white.svg'
 import Instagram2 from '../assets/images/instagram_social_icon_white.svg'
 
-class FooterV2 extends Component {
-
-	render() {
-		return (
+export default () => (
 	<div className='ng-footer-container'>
 	<div className='ng-contact-button-container'>
-	<a href="/project-discovery" className="ng-footer-contact-button drift-open-chat">
-		Lets Start A Project
+	<a href="/drift" className="ng-footer-contact-button">
+		CLICK HERE TO CHAT WITH US
 	</a>
 	</div>
 	<div className="ng-footer footer">
@@ -61,8 +58,4 @@ class FooterV2 extends Component {
 									</div>
 							</div>
 						</div>
-		)
-	}
-}
-	
-export default FooterV2
+)
