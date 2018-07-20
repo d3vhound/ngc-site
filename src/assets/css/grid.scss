@@ -174,3 +174,43 @@
 		padding-top: 6.5rem;
 	}
 }
+
+.ng-mr-pink-3col-container{
+	display: flex;
+	text-align: center;
+	h2 {
+		font-size: 18px;
+	}
+	p {
+		font-family: 'Open Sans', sans-serif;
+		line-height: 1.3rem;
+		font-size: .8rem;
+	}
+	i {
+		font-size: .8rem;
+	}
+}
+
+.ng-mr-pink-3col{
+	width: 33%;
+	flex-shrink: 0;
+	padding: 15px;
+}
+
+
+@media (max-width: 900px) {
+	.ng-mr-pink-3col{
+		padding: 10px;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.ng-mr-pink-3col{
+		padding: 15px;
+		width: 100%;
+	}
+	.ng-mr-pink-3col-container{
+		flex-direction: column;
+	}
+}

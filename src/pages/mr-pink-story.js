@@ -176,6 +176,34 @@ const MrPink = () => (
 				<p>- Mr. Pink</p>
 			</div>
 		</section>
+		<section className="section step-section">
+			<div className="container ng-mr-pink-3col-container">
+				<div className='ng-mr-pink-3col'>
+					<h2>"I STILL DON’T UNDERSTAND WHAT YOU GUYS DO..."</h2>
+					<p>
+						We are a technology consulting firm. We are aptly named a code company because we bring businesses into the next century with high-tech, code-related solutions built for the future.
+						<br/><br/>
+						<i>THAT'S THE SUMMED UP OVERVIEW</i>
+					</p>
+				</div>
+				<div className='ng-mr-pink-3col'>
+					<h2>"BUT I DON’T WANT CONSULTING"</h2>
+					<p>
+						If you already know what you want… Great! We are happy to build your solution just how you want it. Our team will help with whatever aspect of your project you need.
+						<br/><br/>
+						<i>CHEERS, LETS FOCUS ON WHAT YOU WANT</i>
+					</p>
+				</div>
+				<div className='ng-mr-pink-3col'>
+					<h2>"WHY ARE YOU BETTER THAN ANYONE ELSE?"</h2>
+					<p>
+						Because we use the latest technology to ensure that the code we develop is maintable. We are always thinking ahead making sure that our products will last and that your pockets grow from the solutions we bring to the table.
+						<br/><br/>
+						<i>WE DO THINGS DIFFERENTLY</i>
+					</p>
+				</div>
+			</div>
+		</section>
 	</Layout>
 )
 
