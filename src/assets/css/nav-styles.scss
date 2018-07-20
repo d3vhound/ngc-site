@@ -35,7 +35,7 @@ body {
   padding: 25px 0px 25px 0px;
   width: 120px;
   height: 70px;
-  background-color: #FFF;
+  background-color: #fbfbfb;
   cursor: pointer;
 }
 
@@ -173,7 +173,7 @@ body {
     // transform: translate(-50%, -50%);
     height: 100%;
     width: 1px;
-    background-color: #FFF;
+    background-color: #fbfbfb;
     -webkit-transition: all 0.5s cubic-bezier(0.000, 0.785, 0.000, 1.000);
     -o-transition: all 0.5s cubic-bezier(0.000, 0.785, 0.000, 1.000);
     transition: all 0.5s cubic-bezier(0.000, 0.785, 0.000, 1.000);
@@ -324,7 +324,7 @@ body {
 #nav-mobile {
   height: 100vh;
   width: 100%;
-  background-color: #FFF;
+  background-color: #fbfbfb;
   z-index: 21;
   position: fixed;
   top: 0px;
@@ -363,7 +363,7 @@ body {
   top: -150%;
   left: 0;
   height: 70px;
-  background-color: #fff;
+  background-color: #fbfbfb;
 }
 
 #nav-mobile .head .container-logo {

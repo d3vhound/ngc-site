@@ -15,7 +15,7 @@ const Contact = () => (
         <div className="columns">
           <div className="column">
             <h1>Phone</h1>
-            <a href="tel:2145852164"><p>+ 1 (214) 585-2164</p></a>
+            <a href="tel:"><p>+</p></a>
             <h1>Email</h1>
             <a href="mailto:tango@nextgencode.io"><p>tango@nextgencode.io</p></a>
           </div>
