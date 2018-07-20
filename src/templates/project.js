@@ -3,18 +3,21 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import SubHero from '../components/SubHero'
 import Layout from '../components/layout'
+import ProjectDetail from '../components/ProjectDetail'
 import Helmet from 'react-helmet'
+
 
 class Project extends Component {
   render() {
-    const { title, type, content, mockup, logo, mockup2 } = this.props.data.contentfulProject
+    const { title, type, content, mockup, logo, mockup2, metaDescription, mockups, backgrounds } = this.props.data.contentfulProject
+		console.log(typeof mockups)
 
     return (
       <Layout>
 				<Helmet
 					title={`${title} Project | NextGen Code Company`}
 					meta={[
-						{ name: 'description', content: `${title} Project` },
+						{ name: 'description', content: {metaDescription} },
 					]}
 				/>
         <SubHero title={title} subtitle={type} classes/>
@@ -44,6 +47,9 @@ class Project extends Component {
             </div>
           </div>
         </section>
+
+				<ProjectDetail mockups={mockups} backgrounds={backgrounds} />
+
       </Layout>
     )
   }
@@ -61,6 +67,7 @@ export const pageQuery = graphql`
       title
 			type
       slug
+			metaDescription
       logo {
         resolutions(width: 500) {
           width
@@ -87,6 +94,16 @@ export const pageQuery = graphql`
           src
         }
       }
+			mockups {
+				resolutions(width: 1000) {
+					src
+				}
+			}
+			backgrounds {
+				resolutions(width: 1000) {
+					src
+				}
+			}
     }
   }
 `
