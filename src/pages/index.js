@@ -12,6 +12,7 @@ import { Parallax } from 'react-scroll-parallax';
 import Img from 'gatsby-image';
 import USASection from '../components/USASection'
 
+
 const ProjectSections = ({ node }) => {
   return (
 		<ProjectList backgroundImg={node.backgroundImage.sizes}>
