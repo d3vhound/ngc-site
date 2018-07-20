@@ -9,9 +9,16 @@ import Img2 from '../assets/images/mrpinkimage2.jpg'
 import Img3 from '../assets/images/mrpinkimage3.jpg'
 import Img4 from '../assets/images/mrpinkimage4.jpg'
 import Button from '../components/Button';
+import Helmet from 'react-helmet'
 
 const MrPink = () => (
 	<Layout>
+		<Helmet
+			title="Mr. Pink | NextGen Code Company"
+			meta={[
+				{ name: 'description', content: 'Software development agency.' },
+			]}
+		/>
 		<SubHero title="Mr. Pink" subtitle="" />
 		<section className="section">
 			<div className="container">
@@ -42,7 +49,7 @@ const MrPink = () => (
 		<div className='ng-mr-pink-step-container'>
 			<div className='ng-mr-pink-step-inner'>
 				<div className='ng-mr-pink-step-image'>
-					<img className="ng-step-img" src={Img1} />
+					<img alt="People meeting around a table" className="ng-step-img" src={Img1} />
 				</div>
 				<div className='ng-mr-pink-step-info-container'>
 					<div className='ng-mr-pink-step-number-container'>
@@ -89,7 +96,7 @@ const MrPink = () => (
 					</div>
 				</div>
 				<div className='ng-mr-pink-step-image ng-mr-pink-alt-image'>
-					<img className="ng-step-img" src={Img2} />
+					<img alt="Woman showing a nextgen code company developer a certain UI issue on a website." className="ng-step-img" src={Img2} />
 				</div>
 			</div>
 		</div>
@@ -101,7 +108,7 @@ const MrPink = () => (
 		<div className='ng-mr-pink-step-container'>
 			<div className='ng-mr-pink-step-inner'>
 				<div className='ng-mr-pink-step-image'>
-					<img className="ng-step-img" src={Img3} />
+					<img alt="NextGen Team having a good time around the office" className="ng-step-img" src={Img3} />
 				</div>
 				<div className='ng-mr-pink-step-info-container'>
 
@@ -148,7 +155,7 @@ const MrPink = () => (
 					</div>
 				</div>
 				<div className='ng-mr-pink-step-image ng-mr-pink-alt-image'>
-					<img className="ng-step-img" src={Img4} />
+					<img alt="Sales consulting with clients to meet their needs." className="ng-step-img" src={Img4} />
 				</div>
 			</div>
 		</div>

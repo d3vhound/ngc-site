@@ -2,11 +2,18 @@ import React from 'react'
 import SubHero from '../components/SubHero'
 import Tango from '../assets/images/tango.svg'
 import Button from '../components/Button'
+import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
 
 const About = () => (
   <Layout>
+		<Helmet
+			title="About us | NextGen Code Company"
+			meta={[
+				{ name: 'description', content: 'Software development agency.' },
+			]}
+		/>
     <SubHero title="About" subtitle="" />
     <section className="">
 			<div className='ng-about-page-container-top'>

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import SubHero from '../components/SubHero'
 import Layout from '../components/layout'
+import Helmet from 'react-helmet'
 
 class Project extends Component {
   render() {
@@ -10,6 +11,12 @@ class Project extends Component {
 
     return (
       <Layout>
+				<Helmet
+					title={`${title} Project | NextGen Code Company`}
+					meta={[
+						{ name: 'description', content: `${title} Project` },
+					]}
+				/>
         <SubHero title={title} subtitle={type} classes/>
         <section className="section">
           <div className="container">

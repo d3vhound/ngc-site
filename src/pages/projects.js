@@ -6,6 +6,7 @@ import ProjectList from '../components/ProjectList'
 import Button from '../components/Button'
 import { Parallax } from 'react-scroll-parallax';
 import Img from 'gatsby-image';
+import Helmet from 'react-helmet'
 
 const ProjectSections = ({ node }) => {
   return (
@@ -31,6 +32,12 @@ const ProjectSections = ({ node }) => {
 
 const Projects = ({data}) => (
   <Layout>
+		<Helmet
+			title="Projects | NextGen Code Company"
+			meta={[
+				{ name: 'description', content: 'Software development agency.' },
+			]}
+		/>
     <SubHero title="Projects" subtitle="" />
     {data.allContentfulProject.edges.map((edge) => <ProjectSections key={edge.node.title} node={edge.node} />)}
   </Layout>

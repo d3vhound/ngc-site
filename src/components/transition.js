@@ -5,19 +5,39 @@ import getTransitionDelay from "../utils/getTransitionDelay"
 import { historyExitingEventType, timeout, } from "../../gatsby-browser"
 import Tango from '../assets/images/tango.svg'
 
+const Messages = [
+	"Switching to the latest JS framework...",
+	"Downloading more RAM..",
+	"Alt-F4 speeds things up.",
+	"Distracted by cat gifs",
+	"Updating to Windows Vista...",
+	"TODO: Insert elevator music",
+	"Reading Terms and Conditions for you.",
+	"How about this weather, eh?"
+]
+
 class Transition extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { exiting: false }
+    this.state = { 
+			exiting: false,
+			message: "" 
+		}
     this.listenerHandler = this.listenerHandler.bind(this)
   }
 
   listenerHandler(event) {
-    this.setState({ exiting: true })
+
+		let rand = Messages[Math.floor(Math.random() * Messages.length)]
+
+		this.setState({ 
+			exiting: true,
+			message: rand 
+		})
   }
 
   componentDidMount() {
-    window.addEventListener(historyExitingEventType, this.listenerHandler)
+		window.addEventListener(historyExitingEventType, this.listenerHandler)
   }
 
   componentWillUnmount() {
@@ -63,9 +83,9 @@ class Transition extends React.Component {
 								<div className='ng-bubble-small'></div>
 								<div className='ng-bubble-medium'></div>
 								<div className='ng-tango-bubbles-home ng-tango-bubble'>
-									Hello
+									{this.state.message}
 								</div>
-								<img src={Tango} />
+								<img alt="Tango" src={Tango} />
 							</div>
 						</div>
           </div>

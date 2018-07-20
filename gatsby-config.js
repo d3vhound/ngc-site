@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'NextGen Code Company v2',
+    title: 'NextGen Code Company',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

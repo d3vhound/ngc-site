@@ -11,6 +11,7 @@ import ProjectList from '../components/ProjectList'
 import { Parallax } from 'react-scroll-parallax';
 import Img from 'gatsby-image';
 import USASection from '../components/USASection'
+import Helmet from 'react-helmet'
 
 
 const ProjectSections = ({ node }) => {
@@ -38,6 +39,12 @@ const ProjectSections = ({ node }) => {
 const IndexPage = ({data}) => (
   <Layout>
     <Hero />
+		<Helmet
+			title="Home | NextGen Code Company"
+			meta={[
+				{ name: 'description', content: 'Software development agency.' },
+			]}
+		/>
 		{/* <PartnersSection /> */}
     <InfoSection />
 

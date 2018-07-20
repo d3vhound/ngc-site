@@ -1,10 +1,17 @@
 import React from 'react'
 import SubHero from '../components/SubHero'
+import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
 
 const Contact = () => (
 	<Layout>
+		<Helmet
+			title="Project Discovery | NextGen Code Company"
+			meta={[
+				{ name: 'description', content: 'Software development agency.' },
+			]}
+		/>
 		<SubHero title="Project Discovery" subtitle="" />
 		<section className="section">
 			<div className="container">

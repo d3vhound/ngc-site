@@ -13,8 +13,8 @@ import Instagram2 from '../assets/images/instagram_social_icon_white.svg'
 export default () => (
 	<div className='ng-footer-container'>
 	<div className='ng-contact-button-container'>
-	<a href="/drift" className="ng-footer-contact-button">
-		CLICK HERE TO CHAT WITH US
+	<a href="/project-discovery" className="ng-footer-contact-button">
+		Lets Start A Project
 	</a>
 	</div>
 	<div className="ng-footer footer">
