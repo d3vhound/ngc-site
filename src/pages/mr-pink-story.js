@@ -37,7 +37,7 @@ const MrPink = () => (
 		</section>
 		<section className="section">
 			<div className="container">
-				<p>There was once a CEO named Mr. Pink. Mr. Pink was great at running his company for many year but, as time progressed, his business lacked technological advantages. His company was falling behind in the fast-paced market and he needed something to get ahead of his competition.</p>
+				<p>There was once a CEO named Mr. Pink. Mr. Pink was great at running his company for many years but, as time progressed, his business lacked technological advantages. His company was falling behind in the fast-paced market and he needed something to get ahead of his competition.</p>
 				<p>Mr. Pink was losing grip of his business... Troubles surrounded him and finances revealed the impedance of failure.</p>
 				<p>We came to help Mr. Pink get himself out of this hole. Here's how...'</p>
 			</div>

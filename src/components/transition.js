@@ -21,7 +21,7 @@ class Transition extends React.Component {
     super(props)
     this.state = { 
 			exiting: false,
-			message: "" 
+			message: "Loading..." 
 		}
     this.listenerHandler = this.listenerHandler.bind(this)
   }
