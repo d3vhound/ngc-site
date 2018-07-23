@@ -38,7 +38,7 @@
 }
 
 @media(min-width: 1200px) {
-  .project_section { 
+  .project_section {
     margin: 10rem 0;
     padding-top: 8.5rem;
     padding-bottom: 8.5rem;
@@ -86,4 +86,23 @@ p.project-short-desc {
 .project-button-wrapper {
 	width: 100%;
 	text-align: center;
+}
+
+.ng-project-issue-bg{
+	width: 100%;
+	margin-top: -100px;
+	img  {
+		width: 100%;
+	}
+}
+
+
+.ng-project-issue-detail{
+	// transform: translateY(-50%);
+
+	width: 70%;
+	margin: auto;
+	img{
+		max-width: 100%;
+	}
 }

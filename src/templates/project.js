@@ -35,7 +35,7 @@ class Project extends Component {
             </div>
           </div>
         </section>
-        <section className="section">
+        {/*<section className="section">
           <div className="container">
             <div className="columns">
               <div className="column">
@@ -46,7 +46,7 @@ class Project extends Component {
               </div>
             </div>
           </div>
-        </section>
+        </section>*/}
 
 				<ProjectDetail mockups={mockups} backgrounds={backgrounds} />
 

@@ -4,8 +4,8 @@ class ProjectDetail extends Component {
 
 	constructor(props) {
     super(props)
-    this.state = { 
-			sections: [] 
+    this.state = {
+			sections: []
 		}
   }
 
@@ -13,7 +13,7 @@ class ProjectDetail extends Component {
 		const mockups = this.props.mockups
 		const backgrounds = this.props.backgrounds
 		const sectionArr = this.state.sections
-		
+
 		mockups.forEach((v,i) => {
 			let obj = {}
 			obj.meta = v;
@@ -32,16 +32,19 @@ class ProjectDetail extends Component {
 				<div className="container">
 
 					{this.state.sections.length !== 0 ? this.state.sections.map((detail) => {
-						console.log(detail)
 						return (
 
 							<section className="section">
 								<div className="container">
-									<img src={detail.meta.resolutions.src} />
-									<img src={detail.value.resolutions.src} />
+									{/*<div className='ng-project-issue-bg'>
+										<img src={detail.value.resolutions.src} />
+									</div>*/}
+									<div className='ng-project-issue-detail'>
+										<img src={detail.meta.resolutions.src} />
+									</div>
 								</div>
 							</section>
-							
+
 						)
 					}) : <h1>Loading...</h1>}
 
