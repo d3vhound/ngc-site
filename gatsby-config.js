@@ -29,7 +29,14 @@ module.exports = {
         spaceId: 'sb19c99vsgt1',
         accessToken: 'f0e3778507d1bd5b6c59827f584506d5fb62d529aceb9d3fbe09c922d608f64d'
       }
-    },
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `images`,
+				path: `${__dirname}/src/assets/images/`,
+			},
+		},
     // {
     //   resolve: `gatsby-plugin-fullstory`,
     //   options: {

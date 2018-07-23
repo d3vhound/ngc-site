@@ -3,14 +3,15 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import SubHero from '../components/SubHero'
 import Layout from '../components/layout'
-import ProjectDetail from '../components/ProjectDetail'
+// import ProjectDetail from '../components/ProjectDetail'
 import Helmet from 'react-helmet'
 
 
 class Project extends Component {
   render() {
-    const { title, type, content, mockup, logo, mockup2, metaDescription, mockups, backgrounds } = this.props.data.contentfulProject
-		console.log(typeof mockups)
+		const { title, type, content, mockup, logo, mockup2, metaDescription, mockups, backgrounds } = this.props.data.contentfulProject
+		
+		console.log(typeof mockups, typeof backgrounds)
 
     return (
       <Layout>
@@ -48,7 +49,7 @@ class Project extends Component {
           </div>
         </section>*/}
 
-				<ProjectDetail mockups={mockups} backgrounds={backgrounds} />
+				{/* <ProjectDetail mockups={mockups} backgrounds={backgrounds} /> */}
 
       </Layout>
     )

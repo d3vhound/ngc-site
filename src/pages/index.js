@@ -38,7 +38,7 @@ const ProjectSections = ({ node }) => {
 
 const IndexPage = ({data}) => (
   <Layout>
-    <Hero />
+    <Hero headerImage={data.headerImage}/>
 		<Helmet
 			title="Home | NextGen Code Company"
 			meta={[
@@ -87,5 +87,5 @@ export const IndexQuery = graphql`
         }
       }
     }
-  }
+	}
 `
