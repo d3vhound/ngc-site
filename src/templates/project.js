@@ -95,16 +95,6 @@ export const pageQuery = graphql`
           src
         }
       }
-			mockups {
-				resolutions(width: 1000) {
-					src
-				}
-			}
-			backgrounds {
-				resolutions(width: 1000) {
-					src
-				}
-			}
     }
   }
 `

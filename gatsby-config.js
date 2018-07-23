@@ -31,17 +31,14 @@ module.exports = {
       }
 		},
 		{
-			resolve: `gatsby-source-filesystem`,
+			resolve: `gatsby-plugin-google-analytics`,
 			options: {
-				name: `images`,
-				path: `${__dirname}/src/assets/images/`,
+				trackingId: "UA-122819099-1",
+				// Puts tracking script in the head instead of the body
+				head: false,
+				// Setting this parameter is also optional
+				respectDNT: true,
 			},
 		},
-    // {
-    //   resolve: `gatsby-plugin-fullstory`,
-    //   options: {
-    //     fs_org: 'CZP30',
-    //   },
-		// },
   ],
 }
