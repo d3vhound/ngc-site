@@ -13,7 +13,7 @@ import Instagram2 from '../assets/images/instagram_social_icon_white.svg'
 export default () => (
 	<div className='ng-footer-container'>
 	<div className='ng-contact-button-container'>
-	<a href="/" className="ng-footer-contact-button drift-open-chat">
+	<a className="ng-footer-contact-button drift-open-chat">
 		CLICK HERE TO CHAT WITH US
 	</a>
 	</div>
