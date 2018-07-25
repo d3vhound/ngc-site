@@ -8,7 +8,6 @@ import Tango from '../assets/images/tango.svg'
 const Messages = [
 	"Switching to the latest JS framework...",
 	"Downloading more RAM..",
-	"Alt-F4 speeds things up.",
 	"Distracted by cat gifs",
 	"Updating to Windows Vista...",
 	"TODO: Insert elevator music",
