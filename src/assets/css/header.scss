@@ -2,19 +2,19 @@
 
 
 @keyframes headerProgressBar {
-	0% { transform: scaleY(1); opacity: 0;}
-	14% { transform: scaleY(1); opacity: 0;}
-	15% { transform: scaleY(1); opacity: 1;}
-	95% { transform: scaleY(600); opacity: 1;}
-	100% { transform: scaleY(600); opacity: 0;}
+	0% { transform: scaleY(1); -webkit-transform: scaleX(1); opacity: 0;}
+	14% { transform: scaleY(1); -webkit-transform: scaleX(1); opacity: 0;}
+	15% { transform: scaleY(1); -webkit-transform: scaleX(1); opacity: 1;}
+	95% { transform: scaleY(600); -webkit-transform: scaleX(600); opacity: 1;}
+	100% { transform: scaleY(600); -webkit-transform: scaleX(600); opacity: 0;}
 }
 
 @keyframes headerProgressBarY {
-	0% { transform: scaleX(1); opacity: 0;}
-	14% { transform: scaleX(1); opacity: 0;}
-	15% { transform: scaleX(1); opacity: 1;}
-	95% { transform: scaleX(300); opacity: 1;}
-	100% { transform: scaleX(300); opacity: 0;}
+	0% { transform: scaleX(1); -webkit-transform: scaleX(1); opacity: 0;}
+	14% { transform: scaleX(1); -webkit-transform: scaleX(1); opacity: 0;}
+	15% { transform: scaleX(1); -webkit-transform: scaleX(1); opacity: 1;}
+	95% { transform: scaleX(300); -webkit-transform: scaleX(300); opacity: 1;}
+	100% { transform: scaleX(300); -webkit-transform: scaleX(300); opacity: 0;}
 }
 
 
