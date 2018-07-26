@@ -6,7 +6,7 @@
 	14% { transform: scaleY(1); opacity: 0;}
 	15% { transform: scaleY(1); opacity: 1;}
 	95% { transform: scaleY(600); opacity: 1;}
-	100% { transform: scaleY(600); opacity: 0; animation-timing-function: step-end;}
+	100% { transform: scaleY(600); opacity: 0;}
 }
 
 @keyframes headerProgressBarY {
@@ -14,7 +14,7 @@
 	14% { transform: scaleX(1); opacity: 0;}
 	15% { transform: scaleX(1); opacity: 1;}
 	95% { transform: scaleX(300); opacity: 1;}
-	100% { transform: scaleX(300); opacity: 0; animation-timing-function: step-end;}
+	100% { transform: scaleX(300); opacity: 0;}
 }
 
 
@@ -59,7 +59,7 @@
 	text-align: left;
 }
 
-.ng-menu-progress-bar{
+.ng-menu-progress-bar {
 	position: absolute;
 	bottom: 300px;
 	left: 10px;
@@ -212,7 +212,7 @@
 		}
 	}
 
-	.ng-menu-progress-bar{
+	.ng-menu-progress-bar {
 		bottom: 10px;
 		left: 50%;
 		margin-right: 0px;
@@ -220,6 +220,7 @@
 		animation: 5s infinite headerProgressBarY;
 		animation-timing-function: ease-in-out;
 	}
+
 }
 
 .ng-header-item-title{

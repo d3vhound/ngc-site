@@ -23,7 +23,7 @@ const ProjectSections = ({ node }) => {
         slowerScrollRate
 			>
 			<div className="column image-column">
-        <Img imgStyle={{ objectFit: 'contain' }} backgroundColor={'transparent'} className="project-image" sizes={node.mockup.sizes} alt={node.title + " project image"} />
+        <Img imgStyle={{ objectFit: 'contain' }} style={{ overflow: 'visible' }} backgroundColor={'transparent'} className="project-image" sizes={node.mockup.sizes} alt={node.title + " project image"} />
 			</div>
       </Parallax>
     </ProjectList>
