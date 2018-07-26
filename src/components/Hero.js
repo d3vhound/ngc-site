@@ -65,7 +65,11 @@ class Hero extends Component {
 					</div>
 					</div>
 				</div>
-				<div className='ng-menu-progress-bar'></div>
+
+				<div className="progress-bar-container">
+					<div className='ng-menu-progress-bar'></div>
+				</div>
+
 				<div className='ng-menu-spacer-spot'></div>
 			</div>
     );
