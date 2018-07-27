@@ -21,17 +21,18 @@ class WaypointWrapper extends React.Component {
   render() {
 
     const ReachStyles = classNames({
-      reach: this.state.inView,
+			// reach: this.state.inView,
+			reach: true,
       section: true,
       project_section: true
     }) 
 
     return (
-      <Waypoint debug={true} topOffset='-100px' onEnter={this.addReach}>
+      // <Waypoint debug={true} topOffset='-100px' onEnter={this.addReach}>
         <div className={ReachStyles}>
           {this.props.children}
         </div>
-      </Waypoint>
+      // </Waypoint>
     )
   }
 }
