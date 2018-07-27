@@ -27,7 +27,7 @@ class FooterV2 extends Component {
 		// 				if (document.readyState != 'loading')
 		// 					fn();
 		// 			});
-		// 		}
+		// 		}ya	
 		// 	}
 
 		// 	function forEachElement(selector, fn) {
