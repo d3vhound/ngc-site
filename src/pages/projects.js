@@ -10,7 +10,7 @@ import Helmet from 'react-helmet'
 
 const ProjectSections = ({ node }) => {
   return (
-    <ProjectList backgroundImg={node.backgroundImage.sizes} classes="section project-section">
+    <ProjectList backgroundImg={node.backgroundImage} classes="section project-section">
       <div className="column center-content is-one-third">
         <h1 className="project-title">{node.title}</h1>
         <h2 className="project-type">{node.type || "Project Type"}</h2>
@@ -59,6 +59,11 @@ export const ProjectQuery = graphql`
             sizes(maxWidth: 1800) {
               ...GatsbyContentfulSizes_withWebp
             }
+						resolutions(width: 1080) {
+							width
+							height
+							src
+						}
           }
           mockup {
             sizes(maxWidth: 1800) {

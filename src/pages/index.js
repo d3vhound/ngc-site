@@ -16,7 +16,7 @@ import Helmet from 'react-helmet'
 
 const ProjectSections = ({ node }) => {
   return (
-		<ProjectList backgroundImg={node.backgroundImage.sizes}>
+		<ProjectList backgroundImg={node.backgroundImage}>
     <div className="column center-content is-one-third">
       <h1 className="project-title">{node.title}</h1>
       <h2 className="project-type">{node.type || "Project Type"}</h2>
@@ -29,7 +29,8 @@ const ProjectSections = ({ node }) => {
 
 		>
 		<div className="column image-column">
-        <Img imgStyle={{ objectFit: 'contain' }} style={{overflow: 'visible'}} backgroundColor={'transparent'} className="project-image" sizes={node.mockup.sizes} alt={node.title + " project image"} />
+        {/* <Img imgStyle={{ objectFit: 'contain' }} style={{overflow: 'visible'}} backgroundColor={'transparent'} className="project-image" sizes={node.mockup.sizes} alt={node.title + " project image"} /> */}
+				<img className="project-image" style={{overflow: 'visible'}} src={node.mockup.sizes.src} alt={node.title + " project image"}/>
 		</div>
     </Parallax>
     </ProjectList>
