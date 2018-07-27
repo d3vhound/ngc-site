@@ -57,12 +57,12 @@ export const ProjectQuery = graphql`
           type
           backgroundImage {
             sizes(maxWidth: 1800) {
-              ...GatsbyContentfulSizes_withWebp_noBase64
+              ...GatsbyContentfulSizes_withWebp
             }
           }
           mockup {
             sizes(maxWidth: 1800) {
-              ...GatsbyContentfulSizes_withWebp_noBase64
+              ...GatsbyContentfulSizes_withWebp
             }
           }
         }

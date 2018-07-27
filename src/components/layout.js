@@ -16,7 +16,6 @@ import Favicon_touch from '../assets/images/apple-touch-icon.png'
 import Favicon_touch2 from '../assets/images/apple-touch-icon-72x72.png'
 import Favicon_touch3 from '../assets/images/apple-touch-icon-114x114.png'
 
-
 const Layout = ({ children, data }) => (
   <StaticQuery
     query={graphql`
@@ -51,15 +50,14 @@ const Layout = ({ children, data }) => (
 
 
           <TransitionTwo>
-          <ParallaxProvider>
-          <div id="body">
-            {children}
-          </div>
-          </ParallaxProvider>
+          	<ParallaxProvider>
+							<div id="body">
+								{children}
+							</div>
+          	</ParallaxProvider>
           </TransitionTwo>
 
           <Footerv2 />
-				
       </React.Fragment>
     )}
   />

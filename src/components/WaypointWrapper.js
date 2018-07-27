@@ -1,5 +1,5 @@
 import React from 'react'
-// import Waypoint from 'react-waypoint';
+import Waypoint from 'react-waypoint';
 import classNames from 'classnames'
 
 class WaypointWrapper extends React.Component {
@@ -25,7 +25,14 @@ class WaypointWrapper extends React.Component {
 			// reach: true,
       section: true,
       project_section: true
-    }) 
+		})
+		
+		const ReachStylesMobile = classNames({
+			// reach: this.state.inView,
+			reach: true,
+			section: true,
+			project_section: true
+		}) 
 
     return (
       <Waypoint topOffset='-50px' onEnter={this.addReach}>
