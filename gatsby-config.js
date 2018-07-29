@@ -17,12 +17,12 @@ module.exports = {
         ]
       }
     },
-    // {
-    //   resolve: 'gatsby-plugin-drift',
-    //   options: {
-    //     appId: '5descdcc8vrz',
-    //   },
-    // },
+    {
+      resolve: 'gatsby-plugin-drift',
+      options: {
+        appId: '5descdcc8vrz',
+      },
+    },
     {
       resolve: 'gatsby-source-contentful',
       options: {
