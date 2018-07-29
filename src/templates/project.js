@@ -9,7 +9,7 @@ import Helmet from 'react-helmet'
 
 class Project extends Component {
   render() {
-		const { title, type, content, mockup, logo, mockup2, metaDescription, mockups, backgrounds } = this.props.data.contentfulProject
+		const { title, type, content, logo, metaDescription, mockups, backgrounds } = this.props.data.contentfulProject
 		
 		console.log(typeof mockups, typeof backgrounds)
 

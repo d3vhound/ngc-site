@@ -26,17 +26,9 @@ class WaypointWrapper extends React.Component {
       section: true,
       project_section: true
 		})
-		
-		const ReachStylesMobile = classNames({
-			// reach: this.state.inView,
-			reach: true,
-			section: true,
-			project_section: true
-		}) 
 
     return (
       <Waypoint topOffset='100px' onEnter={({event}) => {
-				if (!event) return
 				this.setState({
 					inView: true
 				})

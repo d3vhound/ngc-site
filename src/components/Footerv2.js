@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { Component} from 'react'
 // import Facebook from '../assets/images/logo-facebook.svg'
 // import Linkedin from '../assets/images/logo-linkedin.svg'
@@ -13,48 +14,53 @@ import Instagram2 from '../assets/images/instagram_social_icon_white.svg'
 class FooterV2 extends Component {
 
 	componentDidMount() {
-		// (function () {
-
-		// 	var DRIFT_CHAT_SELECTOR = '.drift-open-chat'
-
-		// 	function ready(fn) {
-		// 		if (document.readyState != 'loading') {
-		// 			fn();
-		// 		} else if (document.addEventListener) {
-		// 			document.addEventListener('DOMContentLoaded', fn);
-		// 		} else {
-		// 			document.attachEvent('onreadystatechange', function () {
-		// 				if (document.readyState != 'loading')
-		// 					fn();
-		// 			});
-		// 		}ya	
-		// 	}
-
-		// 	function forEachElement(selector, fn) {
-		// 		var elements = document.querySelectorAll(selector);
-		// 		for (var i = 0; i < elements.length; i++)
-		// 			fn(elements[i], i);
-		// 	}
-		// 	function openSidebar(driftApi, event) {
-		// 		event.preventDefault();
-		// 		driftApi.sidebar.open();
-		// 		return false;
-		// 	}
-		// 	ready(function () {
-		// 		window.drift.on('ready', function (api) {
-		// 			var handleClick = openSidebar.bind(this, api)
-		// 			forEachElement(DRIFT_CHAT_SELECTOR, function (el) {
-		// 				el.addEventListener('click', handleClick);
-		// 			});
-		// 		});
-		// 	});
-		// })();
-	}
-
-	render() {
-		return (
-
-			<div className='ng-footer-container'>
+		if (window.drift !== undefined) {
+			(function () {
+				
+				var DRIFT_CHAT_SELECTOR = '.drift-open-chat'
+				
+				function ready(fn) {
+					if (document.readyState !== 'loading') {
+						fn();
+					} else if (document.addEventListener) {
+						document.addEventListener('DOMContentLoaded', fn);
+					} else {
+						document.attachEvent('onreadystatechange', function () {
+							if (document.readyState !== 'loading')
+							fn();
+						});
+					}	
+				}
+				
+				function forEachElement(selector, fn) {
+					var elements = document.querySelectorAll(selector);
+					for (var i = 0; i < elements.length; i++)
+					fn(elements[i], i);
+				}
+				function openSidebar(driftApi, event) {
+					event.preventDefault();
+					driftApi.sidebar.open();
+					return false;
+				}
+				ready(function () {
+					window.drift.on('ready', function (api) {
+						var handleClick = openSidebar.bind(this, api)
+						forEachElement(DRIFT_CHAT_SELECTOR, function (el) {
+							el.addEventListener('click', handleClick);
+						});
+					});
+				});
+				})();
+			}
+			else {
+				console.log('window.drift is undefined... you are probs in dev mode so dont sweat it')
+			}
+		}
+		
+		render() {
+			return (
+				
+				<div className='ng-footer-container'>
 	<div className='ng-contact-button-container'>
 	<a className="ng-footer-contact-button drift-open-chat">
 		CLICK HERE TO CHAT WITH US
