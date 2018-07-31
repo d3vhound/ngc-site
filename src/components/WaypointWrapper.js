@@ -29,11 +29,12 @@ class WaypointWrapper extends React.Component {
 
     return (
       <Waypoint topOffset='100px' onEnter={({event}) => {
+
+				// if (!event) return
 				this.setState({
 					inView: true
 				})
 				
-				console.log(event)
 			}}>
         <div className={ReachStyles}>
           {this.props.children}
