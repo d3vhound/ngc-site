@@ -29,8 +29,8 @@ class WaypointWrapper extends React.Component {
 
     return (
       <Waypoint topOffset='100px' onEnter={({event}) => {
+				console.log(window, event)
 
-				
 				this.setState({
 					inView: true
 				})
