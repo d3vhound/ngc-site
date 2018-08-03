@@ -1,6 +1,42 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 }
+.ng-menu-button-lg{
+	position: relative;
+	text-align: center;
+	font-size: 12px;
+	letter-spacing: 3px;
+}
+
+.ng-menu-button-lg:before{
+	position: absolute;
+	content: '';
+	top: calc(50% - 1px);
+	right: -28px;
+	width: 20px;
+	background: #e8e8e8;
+	height: 1px;
+	transform-origin: center;
+	transform: translateY(0px);
+	transition: all .1s ease;
+}
+
+
+.ng-menu-button-lg:after{
+	position: absolute;
+	content: '';
+	top: calc(50% - 1px);
+	right: -28px;
+	width: 20px;
+	background: #e8e8e8;
+	height: 1px;
+	transform-origin: center;
+	transform: translateY(0px);
+	transition: all .1s ease;
+}
+
+
+
 
 #nav-btn {
   position: fixed;
@@ -15,10 +51,22 @@ body {
 	.ng-menu-button-lg:after{
 		background: #e8e8e8;
 	}
+	.ng-menu-button-lg:before{
+		background: #e8e8e8;
+	}
   -webkit-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
   cursor: pointer;
+}
+
+#nav-btn:hover {
+	.ng-menu-button-lg:after{
+		transform: translateY(-4px);
+	}
+	.ng-menu-button-lg:before{
+		transform: translateY(4px);
+	}
 }
 
 @media screen and (max-width: 850px) {
@@ -32,12 +80,54 @@ body {
   right: 0px;
   top: 0px;
   z-index: 22;
-  padding: 25px 0px 25px 0px;
-  width: 120px;
-  height: 70px;
   background-color: #fbfbfb;
+	padding-top: 23px;
+	padding-bottom: 23px;
+	padding-left: 60px;
+	padding-right: 40px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
   cursor: pointer;
+	.ng-menu-button-lg:after{
+		left: -28px;
+		background: #171717;
+	}
+	.ng-menu-button-lg:before{
+		left: -28px;
+		background: #171717;
+	}
 }
+
+#nav-btn-mobile:hover {
+	.ng-menu-button-lg:after{
+		transform: translateY(-4px);
+	}
+	.ng-menu-button-lg:before{
+		transform: translateY(4px);
+	}
+}
+
+#nav-btn-mobile.scroll {
+	box-shadow: 0px 17px 30px -10px rgba(0,0,0,.1);
+}
+
+#nav-btn-mobile.active {
+	background-color: #f7f7f7;
+	box-shadow: none;
+	.ng-menu-button-lg:after{
+		transition-duration: 260ms;
+		transform: translateY(0px) rotate(135deg);
+	}
+	.ng-menu-button-lg:before{
+		transition-duration: 260ms;
+		transform: translateY(0px) rotate(-135deg);
+	}
+}
+
+
+
+
 
 @media screen and (min-width: 850px) {
   #nav-btn-mobile, #nav-mobile {
@@ -142,11 +232,22 @@ body {
 	.ng-menu-button-lg:after{
 		background: #1b1b1b;
 	}
+	.ng-menu-button-lg:before{
+		background: #1b1b1b;
+	}
 }
 
 #nav-btn.active {
 	background-color: rgba(255, 255, 255, 0);
 	box-shadow: none;
+	.ng-menu-button-lg:after{
+		transition-duration: 260ms;
+		transform: translateY(0px) rotate(135deg);
+	}
+	.ng-menu-button-lg:before{
+		transition-duration: 260ms;
+		transform: translateY(0px) rotate(-135deg);
+	}
 }
 
 #nav-btn.active .text {
@@ -154,6 +255,10 @@ body {
 }
 
 #nav-btn.active .ng-menu-button-lg:after {
+	background: #1b1b1b;
+}
+
+#nav-btn.active .ng-menu-button-lg:before {
 	background: #1b1b1b;
 }
 
@@ -240,7 +345,7 @@ body {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #ececec;
+  background-color: #f7f7f7;
 }
 
 
@@ -290,12 +395,10 @@ body {
 
 #nav .content .container-prLink ul li {
   position: relative;
-  // margin-bottom: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 12px;
-  // padding-left: 40px;
 }
 
 #nav .content .container-prLink ul li a {
@@ -305,7 +408,6 @@ body {
   font-weight: 700;
   font-size: 36px;
   text-decoration: none;
-  // background-color: #FFF;
   position: relative;
   padding: 0px 20px 0px 20px;
 }
@@ -324,7 +426,6 @@ body {
 #nav-mobile {
   height: 100vh;
   width: 100%;
-  background-color: #fbfbfb;
   z-index: 21;
   position: fixed;
   top: 0px;
@@ -332,6 +433,18 @@ body {
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
+	background-color: #f7f7f7;
+	overflow: visible;
+}
+
+#nav-mobile:before {
+	position: absolute;
+	content: '';
+	top: -300px;
+	left: 0px;
+	width: 100%;
+	height: 300px;
+	background-color: #f7f7f7;
 }
 
 @media screen and (max-width: 850px) {
@@ -363,7 +476,6 @@ body {
   top: -150%;
   left: 0;
   height: 70px;
-  background-color: #fbfbfb;
 }
 
 #nav-mobile .head .container-logo {
@@ -388,7 +500,12 @@ body {
 }
 
 #nav-mobile .wrapper .container-linkPr {
-    padding: 160px 60px 30px 15px;
+		text-align: center;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 12px;
 }
 
 #nav-mobile .wrapper .container {
@@ -409,21 +526,30 @@ body {
 
 #nav-mobile .wrapper .container-linkPr ul li {
   position: relative;
-  margin-bottom: 35px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px;
 }
 
 #nav-mobile .wrapper .container-linkPr ul li a {
-  display: inline-block;
-  text-decoration: none;
-  color: #1b1b1b;
+  font-size: 24px;
+	color: #1b1b1b;
+  text-transform: uppercase;
   font-family: 'Open Sans';
   font-weight: 700;
-  font-size: 24px;
+  text-decoration: none;
   position: relative;
+  padding: 0px 20px 0px 20px;
 }
 
 #nav-mobile .head .container-logo svg {
   height: 100%;
+}
+
+.mobile-nav{
+	padding: 0px;
 }
 
 .container-logo svg polygon {
@@ -483,41 +609,26 @@ body {
 	align-items: center;
 }
 
-
-.ng-menu-button-lg{
-	position: relative;
-	text-align: center;
-	font-size: 12px;
-	letter-spacing: 3px;
+.social-links-mobile {
+	left: 0px;
+	flex-direction: row;
+	bottom: 20px;
+	width: 100%;
 }
 
-// .ng-menu-button-lg:before{
-// 	position: absolute;
-// 	content: '';
-// 	top: 50%;
-// 	left: -8px;
-// 	width: 1px;
-// 	background: #e8e8e8;
-// 	height: 1px;
-// 	transform-origin: right;
-// 	transform: scaleX(25);
-// }
-//
-.ng-menu-button-lg:after{
-	position: absolute;
-	content: '';
-	top: calc(50% - 1px);
-	right: -8px;
-	width: 1px;
-	background: #e8e8e8;
-	height: 1px;
-	transform-origin: left;
-	transform: scaleX(20);
-}
+
+
 
 .ng-menu-version-container{
 	position: absolute;
 	top: 20px;
 	right: 20px;
+	opacity: .7;
+}
+
+.ng-mobile-menu-version-container{
+	position: absolute;
+	top: 20px;
+	left: 20px;
 	opacity: .7;
 }
