@@ -20,7 +20,8 @@ const Link = ({ children, to, ...other }) => {
       onClick={
         e => {
           if (isSamePage(to) === true) {
-            e.preventDefault()
+						e.preventDefault()
+						document.location.reload()
 					}
 				}
       } 
