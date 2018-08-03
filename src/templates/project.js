@@ -5,11 +5,12 @@ import SubHero from '../components/SubHero'
 import Layout from '../components/layout'
 // import ProjectDetail from '../components/ProjectDetail'
 import Helmet from 'react-helmet'
+import Img from 'gatsby-image';
 
 
 class Project extends Component {
   render() {
-		const { title, type, content, logo, metaDescription, mockups, backgrounds } = this.props.data.contentfulProject
+		const { title, type, content, logo, mockup, mockup2,  metaDescription, mockups, backgrounds } = this.props.data.contentfulProject
 		
 		console.log(typeof mockups, typeof backgrounds)
 
@@ -36,18 +37,18 @@ class Project extends Component {
             </div>
           </div>
         </section>
-        {/*<section className="section">
+        <section className="section">
           <div className="container">
             <div className="columns">
               <div className="column">
-                <img width="100%" alt="main project mockup" src={mockup.resolutions.src} />
+                <Img style={{overflow: 'visible'}} backgroundColor={'transparent'} sizes={mockup.sizes} alt={title + " project image"} />
               </div>
               <div className="column">
-                <img width="100%" alt="main project mockup" src={mockup2.resolutions.src || null} />
+                <Img style={{overflow: 'visible'}} backgroundColor={'transparent'} sizes={mockup2.sizes} alt={title + " project image"} />
               </div>
             </div>
           </div>
-        </section>*/}
+        </section>
 
 				{/* <ProjectDetail mockups={mockups} backgrounds={backgrounds} /> */}
 
@@ -82,18 +83,24 @@ export const pageQuery = graphql`
         }
       }
       mockup {
-        resolutions(width: 1080) {
+        resolutions(width: 800) {
           width
           height
           src
         }
+				sizes(maxWidth: 800) {
+					...GatsbyContentfulSizes_withWebp
+				}
       }
       mockup2 {
-        resolutions(width: 1080) {
+        resolutions(width: 800) {
           width
           height
           src
         }
+				sizes(maxWidth: 800) {
+					...GatsbyContentfulSizes_withWebp
+				}
       }
     }
   }
