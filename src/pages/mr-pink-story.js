@@ -38,7 +38,7 @@ const MrPink = () => (
 		<section className="section">
 			<div className="container">
 				<p>There was once a CEO named Mr. Pink. Mr. Pink was great at running his company for many years but, as time progressed, his business lacked technological advantages. His company was falling behind in the fast-paced market and he needed something to get ahead of his competition.</p>
-				<p>Mr. Pink was losing grip of his business... Troubles surrounded him and finances revealed the impedance of failure.</p>
+				<p>Mr. Pink was losing grip of his business... Troubles surrounded him and finances revealed the sight of failure.</p>
 				<p>We came to help Mr. Pink get himself out of this hole. Here's how...'</p>
 			</div>
 		</section>
@@ -126,7 +126,7 @@ const MrPink = () => (
 					</div>
 					<div className='ng-mr-pink-step-info ng-mr-pink-reverse-order-second'>
 						<h1>We Implemented</h1>
-						<p>Mr. Pink was able to save his business and make phenomenal returns.</p>
+						<p>We developed software, rebranded the company, reformed social media presence, refined marketing, and more.</p>
 					</div>
 				</div>
 			</div>
