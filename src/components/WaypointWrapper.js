@@ -16,11 +16,17 @@ class WaypointWrapper extends React.Component {
     this.setState({
       inView: true
     })
-  }
+	}
+	
+	slideReveal = async () => {
+		await this.setState({
+			inView: true
+		})
+	}
 
   render() {
 
-    const ReachStyles = classNames({
+    let ReachStyles = classNames({
 			reach: this.state.inView,
 			// reach: true,
       section: true,
@@ -28,14 +34,7 @@ class WaypointWrapper extends React.Component {
 		})
 
     return (
-      <Waypoint topOffset='100px' onEnter={({event}) => {
-				console.log(window, event)
-
-				this.setState({
-					inView: true
-				})
-				
-			}}>
+      <Waypoint topOffset='100px' onEnter={this.slideReveal}>
         <div className={ReachStyles}>
           {this.props.children}
         </div>
