@@ -12,9 +12,9 @@ import { Parallax } from 'react-scroll-parallax';
 import Img from 'gatsby-image';
 import USASection from '../components/USASection'
 import Helmet from 'react-helmet'
+import PropTypes from 'prop-types';
 
-
-const ProjectSections = ({ node }) => {
+const ProjectSections = ({ node}) => {
   return (
 		<ProjectList backgroundImg={node.backgroundImage}>
     <div className="column center-content is-one-third">
@@ -36,6 +36,7 @@ const ProjectSections = ({ node }) => {
     </ProjectList>
   )
 }
+
 
 const IndexPage = ({data}) => (
   <Layout>

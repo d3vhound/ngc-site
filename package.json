@@ -24,6 +24,7 @@
     "gatsby-transformer-sharp": "^1.6.27",
     "node-sass": "^4.9.2",
     "popmotion": "^8.2.5",
+    "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-breakpoints": "^3.0.0",
     "react-chatio": "^1.0.15",

@@ -27,7 +27,6 @@ if (typeof document !== 'undefined') {
   history.block((location, action) => location.pathname)
 }
 
-export let replaceHistory = () => history
 
 
 export { historyExitingEventType, historyEnteringEventType, timeout, }
