@@ -9,8 +9,8 @@ import Header from './header'
 import Footerv2 from './Footerv2'
 // import USASection from './USASection'
 import '../assets/css/index.scss'
-import Transition from '../components/transition'
-import TransitionTwo from '../components/transition2'
+// import Transition from '../components/transition'
+// import TransitionTwo from '../components/transition2'
 import Favicon from '../assets/images/favicon.ico'
 import Favicon_touch from '../assets/images/apple-touch-icon.png'
 import Favicon_touch2 from '../assets/images/apple-touch-icon-72x72.png'
@@ -29,10 +29,6 @@ const Layout = ({ children, data }) => (
     `}
     render={data => (
       <React.Fragment>
-        <Transition>
-          <div className="base-overlay">
-          </div>
-        </Transition>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -48,15 +44,12 @@ const Layout = ({ children, data }) => (
         <Nav />
         <Header />
 
-
-          <TransitionTwo>
           	<ParallaxProvider>
 							<div id="body">
 								{children}
 							</div>
           	</ParallaxProvider>
-          </TransitionTwo>
-
+          
           <Footerv2 />
       </React.Fragment>
     )}
