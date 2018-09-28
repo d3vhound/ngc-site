@@ -218,6 +218,7 @@ const NavMobile = ({ isOpen, navItems, onClick }) => (
 const navLinks = [
   { url: '/', name: 'Home', menu_class: 'ng-menu-link-home' },
   { url: '/about/', name: 'About', menu_class: 'ng-menu-link-about' },
+  { url: '/services/', name: 'Services', menu_class: 'ng-menu-link-services' },
   { url: '/projects/', name: 'Projects', menu_class: 'ng-menu-link-projects' },
   { url: '/project-discovery/', name: "Let's start a project", menu_class: 'ng-menu-link-contact' },
 ];
