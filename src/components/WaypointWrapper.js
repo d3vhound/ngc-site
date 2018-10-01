@@ -18,8 +18,8 @@ class WaypointWrapper extends React.Component {
     })
 	}
 	
-	slideReveal = async () => {
-		await this.setState({
+	slideReveal = () => {
+		this.setState({
 			inView: true
 		})
 	}
